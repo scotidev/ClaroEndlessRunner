@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0c9e7ff7d78fa3e46a8508112f7b688a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159377
+  packageName: Little Favelas
+  packageVersion: 1.0
+  assetPath: Assets/Favelas/_TerrainAutoUpgrade/layer_Ground_Soil_032023054508611406.terrainlayer
+  uploadId: 344691

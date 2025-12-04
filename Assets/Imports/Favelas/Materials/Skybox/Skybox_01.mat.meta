@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c3cd1efd833993545a35724a13b84fcc
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159377
+  packageName: Little Favelas
+  packageVersion: 1.0
+  assetPath: Assets/Favelas/Materials/Skybox/Skybox_01.mat
+  uploadId: 344691

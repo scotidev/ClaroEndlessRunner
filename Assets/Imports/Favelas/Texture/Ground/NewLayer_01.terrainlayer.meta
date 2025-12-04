@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cbfb21ca355d3c24bbcfb31b6a0ae1b6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159377
+  packageName: Little Favelas
+  packageVersion: 1.0
+  assetPath: Assets/Favelas/Texture/Ground/NewLayer_01.terrainlayer
+  uploadId: 344691

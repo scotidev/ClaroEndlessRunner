@@ -98,3 +98,14 @@ InitTestScene*.unity*
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
 .vsconfig
+
+# Arquivos de Shaders
+/[Aa]ssets/**/*.shader
+/[Aa]ssets/**/*.shadergraph
+
+# Arquivos de inclusão de Shaders (HLSL, Cg)
+/[Aa]ssets/**/*.cginc
+/[Aa]ssets/**/*.hlsl
+
+# Arquivos de metadados do Linguist (opcional, se usar o Linguist)
+/[Aa]ssets/**/*.gitattributes

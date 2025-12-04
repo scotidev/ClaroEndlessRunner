@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cfe90ae860dfe424090972fc9a1fcc33
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159377
+  packageName: Little Favelas
+  packageVersion: 1.0
+  assetPath: Assets/Favelas/Postprocessing/Postprocessing Profile 1.asset
+  uploadId: 344691

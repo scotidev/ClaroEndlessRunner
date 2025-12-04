@@ -1,0 +1,52 @@
+# Blender 4.1.1 MTL File: 'Cars.blend'
+# www.blender.org
+
+newmtl City_Car
+Ns 89.999969
+Ka 0.236364 0.236364 0.236364
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd C:/Users/Skup/Desktop/City Atlas Map.png
+
+newmtl City_Metal
+Ns 492.632294
+Ka 0.559633 0.559633 0.559633
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd C:/Users/Skup/Desktop/City Atlas Map.png
+
+newmtl Met
+Ns 492.632294
+Ka 0.559633 0.559633 0.559633
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd C:/Users/Skup/Desktop/City Atlas Map.png
+
+newmtl Tire
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Skup/Desktop/City Atlas Map.png
+
+newmtl Windows
+Ns 477.355347
+Ka 0.627273 0.627273 0.627273
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd C:/Users/Skup/Desktop/Windows.png
