@@ -1,6 +1,6 @@
 # CONEXÃO FAVELA
 
-![Banner do Jogo]([banner_jogo.png])
+!Banner do Jogo(https://drive.google.com/file/d/1UqzOSMzyEdolxV-i5imKnH0gLlTVsjFL/view?usp=sharing)
 
 > Um endless runner 3D sobre conexão, sustentabilidade e agilidade na comunidade. Projeto final desenvolvido em parceria com Claro e SoulCode.
 
