@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d2eba6669778d62489f154aa60f73d6a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/grave.prefab
+  uploadId: 526637

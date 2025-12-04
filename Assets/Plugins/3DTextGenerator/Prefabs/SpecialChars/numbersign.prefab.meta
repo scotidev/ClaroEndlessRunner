@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8e8837b2137023e43bbf5d05eeca672a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/numbersign.prefab
+  uploadId: 526637

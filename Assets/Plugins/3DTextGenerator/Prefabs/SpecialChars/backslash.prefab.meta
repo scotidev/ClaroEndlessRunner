@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bb7e98b5f8dd16c46850c3d71ce85d62
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/backslash.prefab
+  uploadId: 526637

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 51971a576f4d3974482f83b3d6d8a1b6
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/parentleft.prefab
+  uploadId: 526637

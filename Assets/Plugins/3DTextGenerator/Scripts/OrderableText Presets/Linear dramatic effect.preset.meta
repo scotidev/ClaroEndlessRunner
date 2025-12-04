@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6f2284ea5a9658a4eb2f0567d472ce4b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2655988077585873504
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Scripts/OrderableText Presets/Linear
+    dramatic effect.preset
+  uploadId: 526637

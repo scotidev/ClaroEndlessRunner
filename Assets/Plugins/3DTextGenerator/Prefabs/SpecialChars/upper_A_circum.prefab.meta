@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: fa873cabd13c88d4aba315d6e0da7762
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/upper_A_circum.prefab
+  uploadId: 526637

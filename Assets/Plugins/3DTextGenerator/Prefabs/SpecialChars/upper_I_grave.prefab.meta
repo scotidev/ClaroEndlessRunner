@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 892dcf29cb751a5428cc503135522391
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/upper_I_grave.prefab
+  uploadId: 526637

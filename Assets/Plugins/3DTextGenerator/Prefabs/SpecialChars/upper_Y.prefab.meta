@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a0943a25381bc464d9114d53620bca34
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/upper_Y.prefab
+  uploadId: 526637

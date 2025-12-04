@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c50223b38a29dfe40b11599bf8f2f089
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/upper_E_circum.prefab
+  uploadId: 526637

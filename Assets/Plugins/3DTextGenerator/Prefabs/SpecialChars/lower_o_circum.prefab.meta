@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ba73982c1df07be4d8cf0485eb6d0fb7
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_o_circum.prefab
+  uploadId: 526637

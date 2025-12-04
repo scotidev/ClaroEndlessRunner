@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b0c94c408712adc468c20d5735ffb140
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/Characters/Y.prefab
+  uploadId: 526637

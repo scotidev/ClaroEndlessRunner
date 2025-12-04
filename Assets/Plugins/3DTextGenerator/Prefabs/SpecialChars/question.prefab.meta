@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 68397f0da390c31478f99967b3f2a148
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/question.prefab
+  uploadId: 526637

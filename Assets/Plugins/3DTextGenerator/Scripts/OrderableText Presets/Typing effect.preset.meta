@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 051bbe0c1aa32be4fa0fc2bfa9c7afc7
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2655988077585873504
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Scripts/OrderableText Presets/Typing
+    effect.preset
+  uploadId: 526637

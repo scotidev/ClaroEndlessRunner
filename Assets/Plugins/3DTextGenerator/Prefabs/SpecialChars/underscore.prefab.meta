@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e21801c52f878b743b8a47fec56ca279
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/underscore.prefab
+  uploadId: 526637

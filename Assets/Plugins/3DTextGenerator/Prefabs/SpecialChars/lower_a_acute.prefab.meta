@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7f8a20bdb51145344b534b85bf22b7e8
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_a_acute.prefab
+  uploadId: 526637

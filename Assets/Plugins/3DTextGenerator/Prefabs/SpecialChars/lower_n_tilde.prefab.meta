@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cd6c8984854abce408ade6137f0bdbae
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_n_tilde.prefab
+  uploadId: 526637

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7da416214a2b3474fbac476d9d311616
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/upper_A_acute.prefab
+  uploadId: 526637

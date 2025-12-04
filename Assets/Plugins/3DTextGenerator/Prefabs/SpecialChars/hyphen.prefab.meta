@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 65d188a8577128c4ebf0a1a74bc68bb0
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/hyphen.prefab
+  uploadId: 526637

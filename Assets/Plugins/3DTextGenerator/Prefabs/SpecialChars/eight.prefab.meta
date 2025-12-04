@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 09b3e3ef4436fd6438939ad65238442b
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/eight.prefab
+  uploadId: 526637

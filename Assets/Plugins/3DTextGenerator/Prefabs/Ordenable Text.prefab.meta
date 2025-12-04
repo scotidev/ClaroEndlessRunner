@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3130e871c78eff7479f4a9acc8701eef
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/Ordenable Text.prefab
+  uploadId: 526637

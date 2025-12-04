@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1c20273f8182dc04880a0603030b5df3
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpaceBoundsVisualizer.prefab
+  uploadId: 526637

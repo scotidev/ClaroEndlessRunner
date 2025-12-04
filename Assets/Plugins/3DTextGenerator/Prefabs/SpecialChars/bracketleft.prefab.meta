@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 921b746990956004f9d5c41600870f63
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/bracketleft.prefab
+  uploadId: 526637

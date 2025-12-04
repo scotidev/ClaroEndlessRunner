@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: bf373506aeae17e448b4d5b1e9fa18d9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2655988077585873504
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Scripts/OrderableText Presets/Simple
+    linear effect.preset
+  uploadId: 526637

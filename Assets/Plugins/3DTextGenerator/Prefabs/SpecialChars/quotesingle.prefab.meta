@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f51a8e937101101439306c412807f3e0
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/quotesingle.prefab
+  uploadId: 526637

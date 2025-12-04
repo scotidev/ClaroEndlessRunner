@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2cf1df3da696aba41aed30775a03fdac
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/Characters/'Accent.prefab
+  uploadId: 526637

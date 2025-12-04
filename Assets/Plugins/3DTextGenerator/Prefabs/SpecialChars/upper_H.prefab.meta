@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d6d77075af46aa34eb8ba840e47309b4
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/upper_H.prefab
+  uploadId: 526637

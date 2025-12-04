@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 417a249d66189e04492096342414fd86
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/equal.prefab
+  uploadId: 526637

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 170e6f13d3624954ebfaebbf8ddb98da
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/TestScene.unity
+  uploadId: 526637

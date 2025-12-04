@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 74e15a426d3ca554588c84a15c27ef09
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/README.txt
+  uploadId: 526637

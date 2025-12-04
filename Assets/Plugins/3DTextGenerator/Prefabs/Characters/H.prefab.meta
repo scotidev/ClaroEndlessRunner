@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6fc188e665017bb4ba1a9858b0f77da3
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/Characters/H.prefab
+  uploadId: 526637

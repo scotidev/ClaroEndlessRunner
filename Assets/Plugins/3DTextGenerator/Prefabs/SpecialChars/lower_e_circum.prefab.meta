@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 28acadc56786bfb43af579003799eac8
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_e_circum.prefab
+  uploadId: 526637

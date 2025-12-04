@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 46c632db1975dbe4fb2dbe021b274a94
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Materials/blue.mat
+  uploadId: 526637

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f2063e42d99ad1f459f1389b54b22c67
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/Characters/SPACE.prefab
+  uploadId: 526637

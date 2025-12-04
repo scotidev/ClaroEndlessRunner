@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 379168737d7d83d4db1219abc8eafaee
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/colon.prefab
+  uploadId: 526637

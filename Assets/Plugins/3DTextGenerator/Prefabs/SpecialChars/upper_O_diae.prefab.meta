@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d7b2126d7fa2a0e40af7527aa004224e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/upper_O_diae.prefab
+  uploadId: 526637

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 65c9c7f8027215f4186f13a29c1dcce8
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/braceleft.prefab
+  uploadId: 526637

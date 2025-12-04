@@ -109,3 +109,9 @@ InitTestScene*.unity*
 
 # Arquivos de metadados do Linguist (opcional, se usar o Linguist)
 /[Aa]ssets/**/*.gitattributes
+
+# Regras para ignorar código de shader dentro de plugins (poluição na contagem)
+/Assets/Plugins/3DTextGenerator/**/*.shader
+/Assets/Plugins/3DTextGenerator/**/*.shadergraph
+/Assets/Plugins/3DTextGenerator/**/*.cginc
+/Assets/Plugins/3DTextGenerator/**/*.hlsl

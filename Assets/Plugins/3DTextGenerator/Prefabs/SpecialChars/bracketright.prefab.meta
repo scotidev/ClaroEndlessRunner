@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8a9f1e93173c42a42a91f7fda76529d7
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/bracketright.prefab
+  uploadId: 526637

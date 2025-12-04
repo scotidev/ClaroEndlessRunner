@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3db10b637b5227148bd4c575f598c5ea
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/circumflex.prefab
+  uploadId: 526637

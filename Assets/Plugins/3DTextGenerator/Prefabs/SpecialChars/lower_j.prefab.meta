@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: dc435f3fab76cca48913c07bc0e7f36a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231291
+  packageName: 3D Text Generator
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_j.prefab
+  uploadId: 526637
