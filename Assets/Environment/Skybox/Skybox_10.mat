@@ -2,25 +2,30 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Skybox_03
-  m_Shader: {fileID: 104, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
+  m_Name: Skybox_10
+  m_Shader: {fileID: 106, guid: 0000000000000000f000000000000000, type: 0}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _SUNDISK_HIGH_QUALITY
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
     - _BackTex:
-        m_Texture: {fileID: 2800000, guid: ed7dbed61538d3841b66ea3e1dffe808, type: 3}
+        m_Texture: {fileID: 2800000, guid: c1d69d77fdaf69643826546b9b5d9960, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -40,7 +45,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DownTex:
-        m_Texture: {fileID: 2800000, guid: deb33cead86bbac4e96a98fa3b7d4a4b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7a49044d4a585c54d84bceb7d8dce5f3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
@@ -48,11 +53,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FrontTex:
-        m_Texture: {fileID: 2800000, guid: 0b1d15d65408a90438bc2d1d5cd989d4, type: 3}
+        m_Texture: {fileID: 2800000, guid: 50a0596b54497524cba5a83e8ce35553, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _LeftTex:
-        m_Texture: {fileID: 2800000, guid: 893ee2344179b3d4cac85dfa99b2f8fb, type: 3}
+        m_Texture: {fileID: 2800000, guid: fb93e13f64f2c30468ee45aef9e08579, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -72,14 +77,16 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RightTex:
-        m_Texture: {fileID: 2800000, guid: 9629235ce40c99f4f924ef562b424e98, type: 3}
+        m_Texture: {fileID: 2800000, guid: 224d7cb37531aba46af8dba00e5fff07, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _UpTex:
-        m_Texture: {fileID: 2800000, guid: ae0986e5b7a30294d8038d04b06bf4c2, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2caba9d0a7e84314b92a2cac3cd69ce3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
+    - _AtmosphereThickness: 0.49
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -96,9 +103,16 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _SunDisk: 2
+    - _SunSize: 0.04
+    - _SunSizeConvergence: 5
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Tint: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+    - _GroundColor: {r: 0.5933902, g: 0.77784735, b: 0.8616352, a: 1}
+    - _SkyTint: {r: 0.6396107, g: 0.8317149, b: 0.8805031, a: 1}
+    - _Tint: {r: 0.17582366, g: 0.34433228, b: 0.44025147, a: 0.5}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

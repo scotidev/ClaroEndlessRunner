@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 56a18c9a78428b34d9a23c17fa8f4178
   - enabled: 1
+    path: Assets/Scenes/Cutscene.unity
+    guid: b094be95b3f3cf54e99ce906724207a3
+  - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
