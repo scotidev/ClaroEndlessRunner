@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] private GameObject painelPause;
-    [SerializeField] private string nomeCenaMenu = "Menu";
 
     private bool jogoPausado = false;
 
@@ -12,7 +11,6 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("Entrei no Escape");
             if (jogoPausado)
                 RetomarJogo();
             else
@@ -37,7 +35,7 @@ public class PauseMenu : MonoBehaviour
     public void IrParaMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(nomeCenaMenu);
+        SceneManager.LoadScene("Menu");
     }
 
     public void SairDoJogo()
@@ -47,7 +45,7 @@ public class PauseMenu : MonoBehaviour
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #elif UNITY_WEBGL
-        Application.OpenURL("about:blank");
+        UnityEngine.Application.OpenURL("about:blank");
 #else
         Application.Quit();
 #endif

@@ -19,7 +19,6 @@ public class SoundSettings : MonoBehaviour
         // Salvar volume
         PlayerPrefs.SetFloat("SavedMasterVolume", value);
 
-        // Converte 0–100 para 0–1
         float normalized = value / 100f;
 
         // Se for 0 → silêncio total
