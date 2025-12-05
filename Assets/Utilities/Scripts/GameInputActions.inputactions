@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "name": "GameInputActions",
+    "maps": [
+        {
+            "name": "MobileControls",
+            "id": "fc46f852-bff1-46f1-8234-e573e5e2358c",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "35b6c662-8d48-4914-9d55-e83648947f7c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "2c1b0f73-b9cb-47e7-9623-8b48e639dd08",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

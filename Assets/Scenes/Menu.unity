@@ -175,6 +175,7 @@ MonoBehaviour:
   painelMenuInicial: {fileID: 148229044}
   painelSettings: {fileID: 539693710}
   painelCreditos: {fileID: 1921029416}
+  painelPause: {fileID: 0}
   nomeCenaMenuPrincipal: Menu
 --- !u!1 &202454554
 GameObject:
@@ -2744,10 +2745,14 @@ MonoBehaviour:
   m_Text: "CR\xC9DITOS\nDESENVOLVIMENTO & PROGRAMA\xC7\xC3O\n\nDavi Pessoa\nDenilson
     Silva\nGabriel Scoti  de Oliveira\nJonathan Carneiro\nLaryssa Aguiar Menjon\nRichard
     Roque da Silva\n\nASSETS E MODELOS 3D\n\nLittle Favela Criado por jackweek20@gmail.com\nPersonagem
-    Cute Female 2 Criado por TurkCheeps\n\nEFEITOS SONOROS\n\nSound Effect Mauricio
-    P\xF3voa (via Pixabay)\nSound Effect Alexis G Angeles (via Pixabay)\n\nMARCAS
-    E AGRADECIMENTOS\n\nClaro Pelo fornecimento de informa\xE7\xF5es, logos, imagens
-    e autoriza\xE7\xE3o de uso no jogo.\n\nSoulCode Pelo uso de logomarcas."
+    Cute Female 2 Criado por TurkCheeps\nFREE Bicycle Pack - understone\nFree Sport
+    Balls - Saritasa\n3D Game Objects - Low Poly City Objects Pack\nGuddies\nKayKit
+    : City Builder Bits - Creative Commons Zero v1.0 Universal\nUltimate Interior
+    Furniture Pack (Low Poly) \u2013 Household & Kitchen Props\nFries and Seagull\n\nEFEITOS
+    SONOROS\n\nSound Effect Mauricio P\xF3voa (via Pixabay)\nSound Effect Alexis
+    G Angeles (via Pixabay)\n\nMARCAS E AGRADECIMENTOS\n\nClaro Pelo fornecimento
+    de: informa\xE7\xF5es, logos, imagens e autoriza\xE7\xE3o de uso no jogo.\nJose
+    de Sousa Magalhaes - Game Lead\nSoulCode Pelo uso de logomarcas e Bootcamp"
 --- !u!222 &2013692973
 CanvasRenderer:
   m_ObjectHideFlags: 0
