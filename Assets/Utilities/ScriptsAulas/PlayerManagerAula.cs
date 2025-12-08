@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class PlayerManager : MonoBehaviour
+public class PlayerManagerAula : MonoBehaviour
 {
     [Header("Vida")]
     public float vidaJogador = 100f;

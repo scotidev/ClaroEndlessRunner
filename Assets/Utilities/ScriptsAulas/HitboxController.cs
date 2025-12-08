@@ -8,7 +8,7 @@ public class HitboxController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            PlayerManager pm = other.GetComponent<PlayerManager>();
+            PlayerManagerAula pm = other.GetComponent<PlayerManagerAula>();
 
             if (pm != null)
             {

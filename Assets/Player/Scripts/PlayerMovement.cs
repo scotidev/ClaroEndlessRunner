@@ -3,8 +3,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private CharacterController controller;
-
+    [Header("Movement")]
     public float speed;
     public float jumpHeight;
     private float jumpVelocity;
@@ -13,9 +12,19 @@ public class PlayerMovement : MonoBehaviour
     private bool isMovingLeft;
     private bool isMovingRight;
 
+    [Header("Raycast")]
+    public float rayRadius;
+    public LayerMask layer;
+
+    private CharacterController controller;
+
+    private PlayerHurt hurt;
+    private PlayerManager playerManager;
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        hurt = GetComponent<PlayerHurt>();
     }
 
     void Update()
@@ -46,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
         {
             jumpVelocity -= gravity;
         }
+        OnCollision();
 
         direction.y = jumpVelocity;
 
@@ -72,5 +82,16 @@ public class PlayerMovement : MonoBehaviour
         }
 
         isMovingLeft = false;
+    }
+
+    void OnCollision()
+    {
+        RaycastHit hit;
+
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, rayRadius, layer) && !hurt.isInvulnerable)
+        {
+            Debug.Log("colidiu");
+            hurt.ActivateInvulnerability();
+        }
     }
 }

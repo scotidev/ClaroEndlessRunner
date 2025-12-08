@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4634295818057182569}
   - component: {fileID: 7912147146986939337}
   - component: {fileID: 7535924731772426556}
-  - component: {fileID: 1353485337325894522}
   m_Layer: 0
   m_Name: Cube (7)
   m_TagString: Untagged
@@ -90,27 +89,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1353485337325894522
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 892365034452846679}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1285061654821053955
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,7 +427,6 @@ GameObject:
   - component: {fileID: 8917716443781866746}
   - component: {fileID: 2816046965844997542}
   - component: {fileID: 3840788332101254139}
-  - component: {fileID: 4885929686900457420}
   m_Layer: 0
   m_Name: Cube (8)
   m_TagString: Untagged
@@ -528,27 +505,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4885929686900457420
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2970469349853469555}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3171069799179260910
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,7 +516,6 @@ GameObject:
   - component: {fileID: 280010694355388532}
   - component: {fileID: 5881081363872819094}
   - component: {fileID: 72901865692055775}
-  - component: {fileID: 3391813240911811632}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -639,27 +594,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3391813240911811632
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3171069799179260910}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3436415576374857501
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,7 +722,6 @@ GameObject:
   - component: {fileID: 6792344014918178752}
   - component: {fileID: 8595595080377875977}
   - component: {fileID: 2585052701383687471}
-  - component: {fileID: 3281464884318145628}
   m_Layer: 0
   m_Name: Cube (9)
   m_TagString: Untagged
@@ -867,27 +800,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3281464884318145628
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5022465457444002024}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5566766141690115893
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,7 +1040,6 @@ GameObject:
   - component: {fileID: 5035046448587985642}
   - component: {fileID: 7978365050070518917}
   - component: {fileID: 7784156271433667829}
-  - component: {fileID: 1360346521521397942}
   m_Layer: 0
   m_Name: Cube (6)
   m_TagString: Untagged
@@ -1207,27 +1118,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1360346521521397942
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7243814093864231851}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7378173088171066806
 GameObject:
   m_ObjectHideFlags: 0
@@ -1346,7 +1236,6 @@ GameObject:
   - component: {fileID: 3673821848814567524}
   - component: {fileID: 2854186628569326090}
   - component: {fileID: 4950199854105618407}
-  - component: {fileID: 4069915666484957556}
   m_Layer: 0
   m_Name: Cube (11)
   m_TagString: Untagged
@@ -1425,27 +1314,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4069915666484957556
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8855461083177318085}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &70436672811366458
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1454,6 +1322,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6849815007978349587}
     m_Modifications:
+    - target: {fileID: 5260509962892184569, guid: 468f1140007bb3647b950defde87b5e9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5278883014533478393, guid: 468f1140007bb3647b950defde87b5e9, type: 3}
       propertyPath: m_Name
       value: Paper_01
@@ -1516,6 +1388,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3781525156392913932}
     m_Modifications:
+    - target: {fileID: -3456373021741903014, guid: 46f6bfb3dbcdb3644af9c9d657781dce, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 606790592340605961, guid: 46f6bfb3dbcdb3644af9c9d657781dce, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.0536795
@@ -1634,6 +1510,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower pot (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6717666582605839187, guid: 921a6a62a1d866749ab632533a5ccced, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1652,6 +1532,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6849815007978349587}
     m_Modifications:
+    - target: {fileID: -2972076011137718505, guid: b44d2b3b7f6781743856646ca8b581bb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5795937269975287490, guid: b44d2b3b7f6781743856646ca8b581bb, type: 3}
       propertyPath: m_Name
       value: Paper_02 (1)
@@ -1714,6 +1598,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5071630093425468884}
     m_Modifications:
+    - target: {fileID: -6880784707128528758, guid: 2b68cb9f0b9bdaa47bbe9a18b1802a8b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 542206962326463270, guid: 2b68cb9f0b9bdaa47bbe9a18b1802a8b, type: 3}
       propertyPath: m_Name
       value: Home_11
@@ -1776,6 +1664,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9141247289393541830}
     m_Modifications:
+    - target: {fileID: -3398438194568194094, guid: d04cfe7e8ffb825479221aec70272261, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2253955569910618641, guid: d04cfe7e8ffb825479221aec70272261, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.818519
@@ -1900,6 +1792,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9012838630512746635}
     m_Modifications:
+    - target: {fileID: -535548338416559626, guid: c584636d16ec8b247938fbc846bd9c0d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4992013586413057666, guid: c584636d16ec8b247938fbc846bd9c0d, type: 3}
       propertyPath: m_Name
       value: Ground_02 (4)
@@ -1970,6 +1866,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5071630093425468884}
     m_Modifications:
+    - target: {fileID: -3620074317965840914, guid: f456aa9245f37354e9af062a83512bba, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 160805133285586892, guid: f456aa9245f37354e9af062a83512bba, type: 3}
       propertyPath: m_Name
       value: Display_02 (2)
@@ -2088,6 +1988,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower pot
       objectReference: {fileID: 0}
+    - target: {fileID: 6717666582605839187, guid: 921a6a62a1d866749ab632533a5ccced, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2150,6 +2054,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9047674626720417123, guid: 3ebbdd1f849bfbb488539c3ba332239c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2168,6 +2076,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9012838630512746635}
     m_Modifications:
+    - target: {fileID: -535548338416559626, guid: c584636d16ec8b247938fbc846bd9c0d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4992013586413057666, guid: c584636d16ec8b247938fbc846bd9c0d, type: 3}
       propertyPath: m_Name
       value: Ground_02 (3)
@@ -2238,6 +2150,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6849815007978349587}
     m_Modifications:
+    - target: {fileID: -292902102994913691, guid: 7ddc98b33bde22d4c852d80da32a5db3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6903196984932890728, guid: 7ddc98b33bde22d4c852d80da32a5db3, type: 3}
       propertyPath: m_Name
       value: Roofing
@@ -2300,6 +2216,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9174051381472281130}
     m_Modifications:
+    - target: {fileID: -5939496744099089100, guid: 893413029e5f5d54cb6beea1bb55002b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6089078965999062397, guid: 893413029e5f5d54cb6beea1bb55002b, type: 3}
       propertyPath: m_Name
       value: Conditioned Air_01 (2)
@@ -2480,6 +2400,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7153945149686059519, guid: 498829d1531f9cc43b80e712ee18ab02, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2498,6 +2422,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5959452901097397269}
     m_Modifications:
+    - target: {fileID: -3154640236810300657, guid: ae2f18a15ab74584f927c1fc33fc48e3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5516447549871723140, guid: ae2f18a15ab74584f927c1fc33fc48e3, type: 3}
       propertyPath: m_Name
       value: Tv Antenna
@@ -2560,6 +2488,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8938398193018511905}
     m_Modifications:
+    - target: {fileID: -3459229136047972068, guid: b77871a4dca62e84a8c0163ec22dc5f1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1688781370140034959, guid: b77871a4dca62e84a8c0163ec22dc5f1, type: 3}
       propertyPath: m_Name
       value: Lemons
@@ -2622,6 +2554,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5071630093425468884}
     m_Modifications:
+    - target: {fileID: -5939496744099089100, guid: 893413029e5f5d54cb6beea1bb55002b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6089078965999062397, guid: 893413029e5f5d54cb6beea1bb55002b, type: 3}
       propertyPath: m_Name
       value: Conditioned Air_01
@@ -2740,6 +2676,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower pot (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6717666582605839187, guid: 921a6a62a1d866749ab632533a5ccced, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2814,6 +2754,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7585185352269625958, guid: 6e057af37d6013a438d98c86dac3d2a2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2832,6 +2776,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4226469741105342709}
     m_Modifications:
+    - target: {fileID: -3398438194568194094, guid: d04cfe7e8ffb825479221aec70272261, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2253955569910618641, guid: d04cfe7e8ffb825479221aec70272261, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2894,6 +2842,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3816291052552876794}
     m_Modifications:
+    - target: {fileID: -340579344219375733, guid: 2effee30287b2ec4eab403ce4da3741e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6008693994467335617, guid: 2effee30287b2ec4eab403ce4da3741e, type: 3}
       propertyPath: m_Name
       value: Door_05 (1)
@@ -2956,6 +2908,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3781525156392913932}
     m_Modifications:
+    - target: {fileID: -1350917145556908646, guid: a1d1edae643be114cb93529f2bc0c0dc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1128437480785009630, guid: a1d1edae643be114cb93529f2bc0c0dc, type: 3}
       propertyPath: m_Name
       value: Water Tank_02 (2)
@@ -3018,6 +2974,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3781525156392913932}
     m_Modifications:
+    - target: {fileID: -4905382148412713094, guid: 41c5b3337a4a75e4f900e97a402bd380, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5050406745075580840, guid: 41c5b3337a4a75e4f900e97a402bd380, type: 3}
       propertyPath: m_Name
       value: Box_01 (1)
@@ -3080,6 +3040,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3484146984422432420}
     m_Modifications:
+    - target: {fileID: -850572817080550343, guid: 46394b26d46a42544b9488574535d1ec, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1102693180218361800, guid: 46394b26d46a42544b9488574535d1ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.4500294
@@ -3186,6 +3150,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower pot
       objectReference: {fileID: 0}
+    - target: {fileID: 6717666582605839187, guid: 921a6a62a1d866749ab632533a5ccced, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3256,6 +3224,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2382867999695421941, guid: 74b9a477203ca954fbfb4c59067e9a74, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2733786524728689529, guid: 74b9a477203ca954fbfb4c59067e9a74, type: 3}
       propertyPath: m_Name
       value: Plant_01 (2)
@@ -3278,6 +3250,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9174051381472281130}
     m_Modifications:
+    - target: {fileID: -3620074317965840914, guid: f456aa9245f37354e9af062a83512bba, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 160805133285586892, guid: f456aa9245f37354e9af062a83512bba, type: 3}
       propertyPath: m_Name
       value: Display_02 (1)
@@ -3340,6 +3316,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9174051381472281130}
     m_Modifications:
+    - target: {fileID: -1350917145556908646, guid: a1d1edae643be114cb93529f2bc0c0dc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1128437480785009630, guid: a1d1edae643be114cb93529f2bc0c0dc, type: 3}
       propertyPath: m_Name
       value: Water Tank_02
@@ -3402,6 +3382,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9012838630512746635}
     m_Modifications:
+    - target: {fileID: -535548338416559626, guid: c584636d16ec8b247938fbc846bd9c0d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4992013586413057666, guid: c584636d16ec8b247938fbc846bd9c0d, type: 3}
       propertyPath: m_Name
       value: Ground_02 (2)
@@ -3472,6 +3456,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5959452901097397269}
     m_Modifications:
+    - target: {fileID: -6699248097195505637, guid: 58d2031fabafc2c48ae40e55bddeae3e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6455387314239861559, guid: 58d2031fabafc2c48ae40e55bddeae3e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.0060005
@@ -3590,6 +3578,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7585185352269625958, guid: 6e057af37d6013a438d98c86dac3d2a2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3650,6 +3642,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3838736580635311812, guid: be7469ab4bd8e384fa116eafc656afee, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408987366416371079, guid: be7469ab4bd8e384fa116eafc656afee, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3722,6 +3718,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2382867999695421941, guid: 74b9a477203ca954fbfb4c59067e9a74, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2733786524728689529, guid: 74b9a477203ca954fbfb4c59067e9a74, type: 3}
       propertyPath: m_Name
       value: Plant_01 (1)
@@ -3788,6 +3788,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8554658362229727876, guid: 1374393565a097248aedf7d7823410af, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3849,6 +3853,10 @@ PrefabInstance:
     - target: {fileID: 2698724359245984853, guid: 921a6a62a1d866749ab632533a5ccced, type: 3}
       propertyPath: m_Name
       value: Flower pot (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6717666582605839187, guid: 921a6a62a1d866749ab632533a5ccced, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3920,6 +3928,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2382867999695421941, guid: 74b9a477203ca954fbfb4c59067e9a74, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2733786524728689529, guid: 74b9a477203ca954fbfb4c59067e9a74, type: 3}
       propertyPath: m_Name
       value: Plant_01
@@ -3984,6 +3996,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2306787230516854534, guid: 9ca38e71718f246438fcfb334b2006b0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7049722136782787860, guid: 9ca38e71718f246438fcfb334b2006b0, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4060,6 +4076,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7585185352269625958, guid: 6e057af37d6013a438d98c86dac3d2a2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4078,6 +4098,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7943011251601660584}
     m_Modifications:
+    - target: {fileID: -3016538946454594969, guid: cb120a8558f137046bc2ae1e72c30e75, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1758387687825999983, guid: cb120a8558f137046bc2ae1e72c30e75, type: 3}
       propertyPath: m_Name
       value: Plant_02
@@ -4208,6 +4232,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7585185352269625958, guid: 6e057af37d6013a438d98c86dac3d2a2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4270,6 +4298,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9047674626720417123, guid: 3ebbdd1f849bfbb488539c3ba332239c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4288,6 +4320,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 629186898173917076}
     m_Modifications:
+    - target: {fileID: 4078127991487622588, guid: db6396093be1a8f4d893f42d011f9082, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6263891767960165720, guid: db6396093be1a8f4d893f42d011f9082, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -4414,6 +4450,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7585185352269625958, guid: 6e057af37d6013a438d98c86dac3d2a2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4432,6 +4472,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6849815007978349587}
     m_Modifications:
+    - target: {fileID: -2972076011137718505, guid: b44d2b3b7f6781743856646ca8b581bb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5795937269975287490, guid: b44d2b3b7f6781743856646ca8b581bb, type: 3}
       propertyPath: m_Name
       value: Paper_02 (2)
@@ -4494,6 +4538,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9012838630512746635}
     m_Modifications:
+    - target: {fileID: -535548338416559626, guid: c584636d16ec8b247938fbc846bd9c0d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4992013586413057666, guid: c584636d16ec8b247938fbc846bd9c0d, type: 3}
       propertyPath: m_Name
       value: Ground_02 (7)
@@ -4608,6 +4656,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower pot
       objectReference: {fileID: 0}
+    - target: {fileID: 6717666582605839187, guid: 921a6a62a1d866749ab632533a5ccced, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4626,6 +4678,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6849815007978349587}
     m_Modifications:
+    - target: {fileID: -4905382148412713094, guid: 41c5b3337a4a75e4f900e97a402bd380, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5050406745075580840, guid: 41c5b3337a4a75e4f900e97a402bd380, type: 3}
       propertyPath: m_Name
       value: Box_01
@@ -4688,6 +4744,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5703434305376429248}
     m_Modifications:
+    - target: {fileID: -1608796117231646990, guid: 4b6d8e303a58dcf4b92a1c137fe6182e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5852969785769246298, guid: 4b6d8e303a58dcf4b92a1c137fe6182e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.03529647
@@ -4750,6 +4810,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6849815007978349587}
     m_Modifications:
+    - target: {fileID: -2466007836616638855, guid: 60e0ab49ba16c60479e6f1d5ab8dafdc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6352056627038570061, guid: 60e0ab49ba16c60479e6f1d5ab8dafdc, type: 3}
       propertyPath: m_Name
       value: Text Mercado
@@ -4812,6 +4876,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 629186898173917076}
     m_Modifications:
+    - target: {fileID: -7424839864510191720, guid: 7c6fdf30df3d1a648b92256a8e2bc911, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 875741717463935318, guid: 7c6fdf30df3d1a648b92256a8e2bc911, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.3639097
@@ -4874,6 +4942,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6849815007978349587}
     m_Modifications:
+    - target: {fileID: -2972076011137718505, guid: b44d2b3b7f6781743856646ca8b581bb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5795937269975287490, guid: b44d2b3b7f6781743856646ca8b581bb, type: 3}
       propertyPath: m_Name
       value: Paper_02
@@ -4936,6 +5008,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3781525156392913932}
     m_Modifications:
+    - target: {fileID: 5260509962892184569, guid: 468f1140007bb3647b950defde87b5e9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5278883014533478393, guid: 468f1140007bb3647b950defde87b5e9, type: 3}
       propertyPath: m_Name
       value: Paper_01 (5)
@@ -4998,6 +5074,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9012838630512746635}
     m_Modifications:
+    - target: {fileID: -535548338416559626, guid: c584636d16ec8b247938fbc846bd9c0d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4992013586413057666, guid: c584636d16ec8b247938fbc846bd9c0d, type: 3}
       propertyPath: m_Name
       value: Ground_02 (9)
@@ -5068,6 +5148,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6849815007978349587}
     m_Modifications:
+    - target: {fileID: 5260509962892184569, guid: 468f1140007bb3647b950defde87b5e9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5278883014533478393, guid: 468f1140007bb3647b950defde87b5e9, type: 3}
       propertyPath: m_Name
       value: Paper_01 (1)
@@ -5174,6 +5258,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower pot
       objectReference: {fileID: 0}
+    - target: {fileID: 6717666582605839187, guid: 921a6a62a1d866749ab632533a5ccced, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5192,6 +5280,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 629186898173917076}
     m_Modifications:
+    - target: {fileID: -5939496744099089100, guid: 893413029e5f5d54cb6beea1bb55002b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6089078965999062397, guid: 893413029e5f5d54cb6beea1bb55002b, type: 3}
       propertyPath: m_Name
       value: Conditioned Air_01 (1)
@@ -5254,6 +5346,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5959452901097397269}
     m_Modifications:
+    - target: {fileID: -7051225909621360435, guid: 84b9727078120824f887e15ba4a5140d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5417987182820538820, guid: 84b9727078120824f887e15ba4a5140d, type: 3}
       propertyPath: m_Name
       value: Window_07
@@ -5320,6 +5416,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5703434305376429248}
     m_Modifications:
+    - target: {fileID: -1608796117231646990, guid: 4b6d8e303a58dcf4b92a1c137fe6182e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5852969785769246298, guid: 4b6d8e303a58dcf4b92a1c137fe6182e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.0032213628
@@ -5382,6 +5482,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 629186898173917076}
     m_Modifications:
+    - target: {fileID: -6699248097195505637, guid: 58d2031fabafc2c48ae40e55bddeae3e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6455387314239861559, guid: 58d2031fabafc2c48ae40e55bddeae3e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.12191
@@ -5488,6 +5592,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9047674626720417123, guid: 3ebbdd1f849bfbb488539c3ba332239c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5550,6 +5658,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8379800197902675983, guid: 6849b2ac3dc2a3d42ba0a33c0bb29dc8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5568,6 +5680,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6849815007978349587}
     m_Modifications:
+    - target: {fileID: 5260509962892184569, guid: 468f1140007bb3647b950defde87b5e9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5278883014533478393, guid: 468f1140007bb3647b950defde87b5e9, type: 3}
       propertyPath: m_Name
       value: Paper_01 (2)
@@ -5674,6 +5790,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5419778258728613850, guid: 0eae0d898ff83734bbc4bc4bb2e7096e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5735,6 +5855,10 @@ PrefabInstance:
     - target: {fileID: 2544445481178478682, guid: 223758635b1a8614eb1a2e425c5f7f74, type: 3}
       propertyPath: m_Name
       value: Home_15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6649747196928195945, guid: 223758635b1a8614eb1a2e425c5f7f74, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5798,6 +5922,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower pot (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6717666582605839187, guid: 921a6a62a1d866749ab632533a5ccced, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5819,6 +5947,10 @@ PrefabInstance:
     - target: {fileID: 5467434826810451104, guid: fae562ece9b8ba04f82de63e7da090e6, type: 3}
       propertyPath: m_Name
       value: Window_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8861910550000364298, guid: fae562ece9b8ba04f82de63e7da090e6, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9059943760392361651, guid: fae562ece9b8ba04f82de63e7da090e6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5918,6 +6050,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2034376298502784504, guid: e844abd78fd76e94bab29c70623e93cb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4545083353364385295, guid: e844abd78fd76e94bab29c70623e93cb, type: 3}
       propertyPath: m_Name
       value: Home_19
@@ -5940,6 +6076,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3781525156392913932}
     m_Modifications:
+    - target: {fileID: -2972076011137718505, guid: b44d2b3b7f6781743856646ca8b581bb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5795937269975287490, guid: b44d2b3b7f6781743856646ca8b581bb, type: 3}
       propertyPath: m_Name
       value: Paper_02 (4)
@@ -6002,6 +6142,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9012838630512746635}
     m_Modifications:
+    - target: {fileID: -535548338416559626, guid: c584636d16ec8b247938fbc846bd9c0d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4992013586413057666, guid: c584636d16ec8b247938fbc846bd9c0d, type: 3}
       propertyPath: m_Name
       value: Ground_02 (6)
@@ -6072,6 +6216,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3781525156392913932}
     m_Modifications:
+    - target: {fileID: -17049201913477486, guid: a834c17bb8d0ba049bb81f1ea9e137da, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1941300315963118958, guid: a834c17bb8d0ba049bb81f1ea9e137da, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.1659775
@@ -6190,6 +6338,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7585185352269625958, guid: 6e057af37d6013a438d98c86dac3d2a2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6264,6 +6416,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7585185352269625958, guid: 6e057af37d6013a438d98c86dac3d2a2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6325,6 +6481,10 @@ PrefabInstance:
     - target: {fileID: 2698724359245984853, guid: 921a6a62a1d866749ab632533a5ccced, type: 3}
       propertyPath: m_Name
       value: Flower pot (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6717666582605839187, guid: 921a6a62a1d866749ab632533a5ccced, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6388,6 +6548,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Display_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8049100603600712638, guid: 6c3d4f1d616187c40b0e56aea472a80f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6406,6 +6570,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8938398193018511905}
     m_Modifications:
+    - target: {fileID: -2593542378233913938, guid: 0170e4a61983a9d4fa710d9ddfa5246c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1886148594105389452, guid: 0170e4a61983a9d4fa710d9ddfa5246c, type: 3}
       propertyPath: m_Name
       value: Table
@@ -6468,6 +6636,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3484146984422432420}
     m_Modifications:
+    - target: {fileID: -7008312093086824226, guid: 24c7ab3182e932b48acd42b0311b495d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 114448063314657751, guid: 24c7ab3182e932b48acd42b0311b495d, type: 3}
       propertyPath: m_Name
       value: Rock_04
@@ -6530,6 +6702,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4226469741105342709}
     m_Modifications:
+    - target: {fileID: -1921066086896995512, guid: 5ee9aec3462952d4cb5e55586796b92e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6280036185056564356, guid: 5ee9aec3462952d4cb5e55586796b92e, type: 3}
       propertyPath: m_Name
       value: Home_12
@@ -6648,6 +6824,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower pot (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6717666582605839187, guid: 921a6a62a1d866749ab632533a5ccced, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6718,6 +6898,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2382867999695421941, guid: 74b9a477203ca954fbfb4c59067e9a74, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2733786524728689529, guid: 74b9a477203ca954fbfb4c59067e9a74, type: 3}
       propertyPath: m_Name
       value: Plant_01
@@ -6740,6 +6924,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9141247289393541830}
     m_Modifications:
+    - target: {fileID: -5939496744099089100, guid: 893413029e5f5d54cb6beea1bb55002b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6089078965999062397, guid: 893413029e5f5d54cb6beea1bb55002b, type: 3}
       propertyPath: m_Name
       value: Conditioned Air_01 (1)
@@ -6846,6 +7034,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_02
       objectReference: {fileID: 0}
+    - target: {fileID: 6594574305375088993, guid: 18699447f96b31f45a6e13c7a43f5c5d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6864,6 +7056,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9141247289393541830}
     m_Modifications:
+    - target: {fileID: 1878175133922666704, guid: 56ac09918e78d4244a847ba86588c77c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6014323683350276159, guid: 56ac09918e78d4244a847ba86588c77c, type: 3}
       propertyPath: m_Name
       value: Door_01
@@ -6926,6 +7122,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9174051381472281130}
     m_Modifications:
+    - target: {fileID: -3620074317965840914, guid: f456aa9245f37354e9af062a83512bba, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 160805133285586892, guid: f456aa9245f37354e9af062a83512bba, type: 3}
       propertyPath: m_Name
       value: Display_02
@@ -7032,6 +7232,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Display_01
       objectReference: {fileID: 0}
+    - target: {fileID: 8049100603600712638, guid: 6c3d4f1d616187c40b0e56aea472a80f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7050,6 +7254,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6849815007978349587}
     m_Modifications:
+    - target: {fileID: 1023442942983626607, guid: 1a4f2d379da235e4aa571910729f9407, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1109432836544033633, guid: 1a4f2d379da235e4aa571910729f9407, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.2340999
@@ -7112,6 +7320,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5071630093425468884}
     m_Modifications:
+    - target: {fileID: -6064329640320423309, guid: 8d9cc300d6a2a3b4ea973acb4cbcd21f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 289549440422814349, guid: 8d9cc300d6a2a3b4ea973acb4cbcd21f, type: 3}
       propertyPath: m_Name
       value: Water Tank_01
@@ -7226,6 +7438,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2382867999695421941, guid: 74b9a477203ca954fbfb4c59067e9a74, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2733786524728689529, guid: 74b9a477203ca954fbfb4c59067e9a74, type: 3}
       propertyPath: m_Name
       value: Plant_01 (1)
@@ -7248,6 +7464,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5071630093425468884}
     m_Modifications:
+    - target: {fileID: -3016538946454594969, guid: cb120a8558f137046bc2ae1e72c30e75, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1758387687825999983, guid: cb120a8558f137046bc2ae1e72c30e75, type: 3}
       propertyPath: m_Name
       value: Plant_02
@@ -7322,6 +7542,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3781525156392913932}
     m_Modifications:
+    - target: {fileID: 5260509962892184569, guid: 468f1140007bb3647b950defde87b5e9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5278883014533478393, guid: 468f1140007bb3647b950defde87b5e9, type: 3}
       propertyPath: m_Name
       value: Paper_01 (4)
@@ -7387,6 +7611,10 @@ PrefabInstance:
     - target: {fileID: 6389401748357564657, guid: 53626a9f8787544408c9d76c6edde51b, type: 3}
       propertyPath: m_Name
       value: Home_16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552764398256347710, guid: 53626a9f8787544408c9d76c6edde51b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7994151921299110626, guid: 53626a9f8787544408c9d76c6edde51b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7502,6 +7730,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7585185352269625958, guid: 6e057af37d6013a438d98c86dac3d2a2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7520,6 +7752,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9012838630512746635}
     m_Modifications:
+    - target: {fileID: -535548338416559626, guid: c584636d16ec8b247938fbc846bd9c0d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4992013586413057666, guid: c584636d16ec8b247938fbc846bd9c0d, type: 3}
       propertyPath: m_Name
       value: Ground_02 (10)
@@ -7590,6 +7826,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5071630093425468884}
     m_Modifications:
+    - target: {fileID: -4219784989028332193, guid: 838e7032b477c5243bad295beb561c14, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5935088202237920279, guid: 838e7032b477c5243bad295beb561c14, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -7716,6 +7956,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7585185352269625958, guid: 6e057af37d6013a438d98c86dac3d2a2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7734,6 +7978,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3484146984422432420}
     m_Modifications:
+    - target: {fileID: -6199456979171299431, guid: b5c6986b78343404ebeee8597a7f85dc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1977545437911453591, guid: b5c6986b78343404ebeee8597a7f85dc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.4239998
@@ -7852,6 +8100,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7585185352269625958, guid: 6e057af37d6013a438d98c86dac3d2a2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7914,6 +8166,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9047674626720417123, guid: 3ebbdd1f849bfbb488539c3ba332239c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7935,6 +8191,10 @@ PrefabInstance:
     - target: {fileID: 5467434826810451104, guid: fae562ece9b8ba04f82de63e7da090e6, type: 3}
       propertyPath: m_Name
       value: Window_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8861910550000364298, guid: fae562ece9b8ba04f82de63e7da090e6, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9059943760392361651, guid: fae562ece9b8ba04f82de63e7da090e6, type: 3}
       propertyPath: m_LocalScale.x
@@ -8058,6 +8318,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7585185352269625958, guid: 6e057af37d6013a438d98c86dac3d2a2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8128,6 +8392,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7138289318299704278, guid: 6a86aa6cc5f4ce342a7d89a87ff162e5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8146,6 +8414,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8938398193018511905}
     m_Modifications:
+    - target: {fileID: -3459229136047972068, guid: b77871a4dca62e84a8c0163ec22dc5f1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1688781370140034959, guid: b77871a4dca62e84a8c0163ec22dc5f1, type: 3}
       propertyPath: m_Name
       value: Lemons (1)
@@ -8208,6 +8480,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4226469741105342709}
     m_Modifications:
+    - target: {fileID: -5939496744099089100, guid: 893413029e5f5d54cb6beea1bb55002b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6089078965999062397, guid: 893413029e5f5d54cb6beea1bb55002b, type: 3}
       propertyPath: m_Name
       value: Conditioned Air_01
@@ -8322,6 +8598,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8641753530924948674, guid: 359d2f70d8b0e99419ae820f89f29150, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8340,6 +8620,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9012838630512746635}
     m_Modifications:
+    - target: {fileID: -535548338416559626, guid: c584636d16ec8b247938fbc846bd9c0d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4992013586413057666, guid: c584636d16ec8b247938fbc846bd9c0d, type: 3}
       propertyPath: m_Name
       value: Ground_02 (8)
@@ -8410,6 +8694,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9174051381472281130}
     m_Modifications:
+    - target: {fileID: -3189456485911116915, guid: 8d6e9b0f9359e56438f8ca3fa0c52a61, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1471600870487792418, guid: 8d6e9b0f9359e56438f8ca3fa0c52a61, type: 3}
       propertyPath: m_Name
       value: Home_06
@@ -8475,6 +8763,10 @@ PrefabInstance:
     - target: {fileID: 5216627968375383891, guid: 541ac91ec4cb1124e93b051f6fcd7e47, type: 3}
       propertyPath: m_Name
       value: Arbor_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5371708958872827981, guid: 541ac91ec4cb1124e93b051f6fcd7e47, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9096838759046387008, guid: 541ac91ec4cb1124e93b051f6fcd7e47, type: 3}
       propertyPath: m_LocalScale.x
@@ -8586,6 +8878,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5093569912012180850, guid: 548216cde5da1c947b2dfd1288df5b7c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8313079636656652829, guid: 548216cde5da1c947b2dfd1288df5b7c, type: 3}
       propertyPath: m_Name
       value: Door_03
@@ -8650,6 +8946,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2885915687757801871, guid: 3ebbdd1f849bfbb488539c3ba332239c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9047674626720417123, guid: 3ebbdd1f849bfbb488539c3ba332239c, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -8726,6 +9026,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7585185352269625958, guid: 6e057af37d6013a438d98c86dac3d2a2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8744,6 +9048,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4226469741105342709}
     m_Modifications:
+    - target: {fileID: -340579344219375733, guid: 2effee30287b2ec4eab403ce4da3741e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6008693994467335617, guid: 2effee30287b2ec4eab403ce4da3741e, type: 3}
       propertyPath: m_Name
       value: Door_05
@@ -8806,6 +9114,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3781525156392913932}
     m_Modifications:
+    - target: {fileID: -1504858469440429702, guid: daed06a73196b7a49912c3f68316acb6, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5326629486943816230, guid: daed06a73196b7a49912c3f68316acb6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.2863207
@@ -8868,6 +9180,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3781525156392913932}
     m_Modifications:
+    - target: {fileID: -1350917145556908646, guid: a1d1edae643be114cb93529f2bc0c0dc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1128437480785009630, guid: a1d1edae643be114cb93529f2bc0c0dc, type: 3}
       propertyPath: m_Name
       value: Water Tank_02 (1)
@@ -8930,6 +9246,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3781525156392913932}
     m_Modifications:
+    - target: {fileID: -4905382148412713094, guid: 41c5b3337a4a75e4f900e97a402bd380, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5050406745075580840, guid: 41c5b3337a4a75e4f900e97a402bd380, type: 3}
       propertyPath: m_Name
       value: Box_01
@@ -8992,6 +9312,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2258636328489999436}
     m_Modifications:
+    - target: {fileID: -4552155456970591147, guid: 0a363e2fa388e2847b11a82f8a334029, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5966892689390461474, guid: 0a363e2fa388e2847b11a82f8a334029, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -9098,6 +9422,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8722942622235834226, guid: 96aa16c91a87e76498958b35ca7925b4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9116,6 +9444,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5703434305376429248}
     m_Modifications:
+    - target: {fileID: -1608796117231646990, guid: 4b6d8e303a58dcf4b92a1c137fe6182e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5852969785769246298, guid: 4b6d8e303a58dcf4b92a1c137fe6182e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -9178,6 +9510,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6849815007978349587}
     m_Modifications:
+    - target: {fileID: -4251658741010164516, guid: 67443874430f23c478ea0f12a673b6bd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5090726832356711344, guid: 67443874430f23c478ea0f12a673b6bd, type: 3}
       propertyPath: m_Name
       value: Cloths_02
@@ -9240,6 +9576,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3781525156392913932}
     m_Modifications:
+    - target: {fileID: -17049201913477486, guid: a834c17bb8d0ba049bb81f1ea9e137da, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1941300315963118958, guid: a834c17bb8d0ba049bb81f1ea9e137da, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.3771238
@@ -9302,6 +9642,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3484146984422432420}
     m_Modifications:
+    - target: {fileID: -850572817080550343, guid: 46394b26d46a42544b9488574535d1ec, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1102693180218361800, guid: 46394b26d46a42544b9488574535d1ec, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.4
@@ -9432,6 +9776,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7585185352269625958, guid: 6e057af37d6013a438d98c86dac3d2a2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9494,6 +9842,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7049722136782787860, guid: 9ca38e71718f246438fcfb334b2006b0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9512,6 +9864,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3781525156392913932}
     m_Modifications:
+    - target: {fileID: -2972076011137718505, guid: b44d2b3b7f6781743856646ca8b581bb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5795937269975287490, guid: b44d2b3b7f6781743856646ca8b581bb, type: 3}
       propertyPath: m_Name
       value: Paper_02 (5)
@@ -9574,6 +9930,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5071630093425468884}
     m_Modifications:
+    - target: {fileID: 2915267120350017098, guid: c7a1b128685fda248ac831b644a42fa5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5710404840872215311, guid: c7a1b128685fda248ac831b644a42fa5, type: 3}
       propertyPath: m_Name
       value: Tomatoes
@@ -9636,6 +9996,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3781525156392913932}
     m_Modifications:
+    - target: {fileID: -2972076011137718505, guid: b44d2b3b7f6781743856646ca8b581bb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5795937269975287490, guid: b44d2b3b7f6781743856646ca8b581bb, type: 3}
       propertyPath: m_Name
       value: Paper_02 (3)
@@ -9698,6 +10062,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7943011251601660584}
     m_Modifications:
+    - target: {fileID: 1598575701887448487, guid: b3db68ca28c2ee64abece9cafce53e2b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5656941985724933877, guid: b3db68ca28c2ee64abece9cafce53e2b, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -9768,6 +10136,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5071630093425468884}
     m_Modifications:
+    - target: {fileID: -2593542378233913938, guid: 0170e4a61983a9d4fa710d9ddfa5246c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1886148594105389452, guid: 0170e4a61983a9d4fa710d9ddfa5246c, type: 3}
       propertyPath: m_Name
       value: Table
@@ -9830,6 +10202,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4811006407335875649}
     m_Modifications:
+    - target: {fileID: 4726140184814863405, guid: 53b654d7f6b790048b7e21b68395f4a3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6516220367447129614, guid: 53b654d7f6b790048b7e21b68395f4a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.7147102
@@ -9892,6 +10268,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2258636328489999436}
     m_Modifications:
+    - target: {fileID: -3154640236810300657, guid: ae2f18a15ab74584f927c1fc33fc48e3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5516447549871723140, guid: ae2f18a15ab74584f927c1fc33fc48e3, type: 3}
       propertyPath: m_Name
       value: Tv Antenna (1)
@@ -9958,6 +10338,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Window_01
       objectReference: {fileID: 0}
+    - target: {fileID: 8861910550000364298, guid: fae562ece9b8ba04f82de63e7da090e6, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9059943760392361651, guid: fae562ece9b8ba04f82de63e7da090e6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.2903204
@@ -10016,6 +10400,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3781525156392913932}
     m_Modifications:
+    - target: {fileID: 5260509962892184569, guid: 468f1140007bb3647b950defde87b5e9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5278883014533478393, guid: 468f1140007bb3647b950defde87b5e9, type: 3}
       propertyPath: m_Name
       value: Paper_01 (3)
@@ -10078,6 +10466,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7943011251601660584}
     m_Modifications:
+    - target: {fileID: -3154640236810300657, guid: ae2f18a15ab74584f927c1fc33fc48e3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5516447549871723140, guid: ae2f18a15ab74584f927c1fc33fc48e3, type: 3}
       propertyPath: m_Name
       value: Tv Antenna
@@ -10140,6 +10532,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3484146984422432420}
     m_Modifications:
+    - target: {fileID: -850572817080550343, guid: 46394b26d46a42544b9488574535d1ec, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1102693180218361800, guid: 46394b26d46a42544b9488574535d1ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.56164
@@ -10202,6 +10598,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9012838630512746635}
     m_Modifications:
+    - target: {fileID: -535548338416559626, guid: c584636d16ec8b247938fbc846bd9c0d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4992013586413057666, guid: c584636d16ec8b247938fbc846bd9c0d, type: 3}
       propertyPath: m_Name
       value: Ground_02
@@ -10272,6 +10672,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9012838630512746635}
     m_Modifications:
+    - target: {fileID: -535548338416559626, guid: c584636d16ec8b247938fbc846bd9c0d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4992013586413057666, guid: c584636d16ec8b247938fbc846bd9c0d, type: 3}
       propertyPath: m_Name
       value: Ground_02 (5)
@@ -10342,6 +10746,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3484146984422432420}
     m_Modifications:
+    - target: {fileID: -850572817080550343, guid: 46394b26d46a42544b9488574535d1ec, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1102693180218361800, guid: 46394b26d46a42544b9488574535d1ec, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.4
@@ -10416,6 +10824,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8938398193018511905}
     m_Modifications:
+    - target: {fileID: 2915267120350017098, guid: c7a1b128685fda248ac831b644a42fa5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5710404840872215311, guid: c7a1b128685fda248ac831b644a42fa5, type: 3}
       propertyPath: m_Name
       value: Tomatoes
@@ -10478,6 +10890,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3484146984422432420}
     m_Modifications:
+    - target: {fileID: -3973771834000812189, guid: df5828eeca9858c458f4cc4b615d3fed, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6066242337712372111, guid: df5828eeca9858c458f4cc4b615d3fed, type: 3}
       propertyPath: m_Name
       value: Rock_08
@@ -10540,6 +10956,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3781525156392913932}
     m_Modifications:
+    - target: {fileID: -17049201913477486, guid: a834c17bb8d0ba049bb81f1ea9e137da, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1941300315963118958, guid: a834c17bb8d0ba049bb81f1ea9e137da, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.98146915
@@ -10602,6 +11022,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9012838630512746635}
     m_Modifications:
+    - target: {fileID: -535548338416559626, guid: c584636d16ec8b247938fbc846bd9c0d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4992013586413057666, guid: c584636d16ec8b247938fbc846bd9c0d, type: 3}
       propertyPath: m_Name
       value: Ground_02 (1)
@@ -10672,6 +11096,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6849815007978349587}
     m_Modifications:
+    - target: {fileID: -5939496744099089100, guid: 893413029e5f5d54cb6beea1bb55002b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6089078965999062397, guid: 893413029e5f5d54cb6beea1bb55002b, type: 3}
       propertyPath: m_Name
       value: Conditioned Air_01
@@ -10786,6 +11214,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2382867999695421941, guid: 74b9a477203ca954fbfb4c59067e9a74, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2733786524728689529, guid: 74b9a477203ca954fbfb4c59067e9a74, type: 3}
       propertyPath: m_Name
       value: Plant_01
@@ -10852,6 +11284,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8554658362229727876, guid: 1374393565a097248aedf7d7823410af, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10870,6 +11306,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9141247289393541830}
     m_Modifications:
+    - target: {fileID: -3456373021741903014, guid: 46f6bfb3dbcdb3644af9c9d657781dce, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 606790592340605961, guid: 46f6bfb3dbcdb3644af9c9d657781dce, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -10936,6 +11376,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5071630093425468884}
     m_Modifications:
+    - target: {fileID: 3907281860536675862, guid: 9b5f8eba086dc7446b101bb7dbbdbada, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6516360484069257551, guid: 9b5f8eba086dc7446b101bb7dbbdbada, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -11006,6 +11450,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5959452901097397269}
     m_Modifications:
+    - target: {fileID: -685944750175233857, guid: 7d84c4130487e854b9b90615b2b4f88e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5750227116588237894, guid: 7d84c4130487e854b9b90615b2b4f88e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -11068,6 +11516,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3816291052552876794}
     m_Modifications:
+    - target: {fileID: -9159740772751188600, guid: 85072510fba5b864581a81098176e71e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4947416201338289225, guid: 85072510fba5b864581a81098176e71e, type: 3}
       propertyPath: m_Name
       value: Home_10
@@ -11186,6 +11638,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower pot (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6717666582605839187, guid: 921a6a62a1d866749ab632533a5ccced, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11204,6 +11660,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9012838630512746635}
     m_Modifications:
+    - target: {fileID: -535548338416559626, guid: c584636d16ec8b247938fbc846bd9c0d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4992013586413057666, guid: c584636d16ec8b247938fbc846bd9c0d, type: 3}
       propertyPath: m_Name
       value: Ground_02 (11)
@@ -11274,6 +11734,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3781525156392913932}
     m_Modifications:
+    - target: {fileID: 1878175133922666704, guid: 56ac09918e78d4244a847ba86588c77c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6014323683350276159, guid: 56ac09918e78d4244a847ba86588c77c, type: 3}
       propertyPath: m_Name
       value: Door_01
@@ -11336,6 +11800,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9174051381472281130}
     m_Modifications:
+    - target: {fileID: 1598575701887448487, guid: b3db68ca28c2ee64abece9cafce53e2b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5656941985724933877, guid: b3db68ca28c2ee64abece9cafce53e2b, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -11461,6 +11929,10 @@ PrefabInstance:
     - target: {fileID: 2698724359245984853, guid: 921a6a62a1d866749ab632533a5ccced, type: 3}
       propertyPath: m_Name
       value: Flower pot (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6717666582605839187, guid: 921a6a62a1d866749ab632533a5ccced, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
