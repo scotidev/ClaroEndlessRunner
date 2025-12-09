@@ -9,12 +9,6 @@ public class GameOverController : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
-    private void Start()
-    {
-
-    }
-
-
     public void SairDoJogo()
     {
         Application.Quit();

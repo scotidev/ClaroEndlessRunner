@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         hurt = GetComponent<PlayerHurt>();
+        playerManager = GetComponent<PlayerManager>();
     }
 
     void Update()
@@ -38,13 +39,15 @@ public class PlayerMovement : MonoBehaviour
                 jumpVelocity = jumpHeight;
             }
 
-            if (Input.GetKeyDown(KeyCode.RightArrow) && transform.position.x < 1f && !isMovingRight)
+            if ((Input.GetKeyDown(KeyCode.RightArrow) && transform.position.x < 1f && !isMovingRight) ||
+                (Input.GetKeyDown(KeyCode.D) && transform.position.x < 1f && !isMovingRight))
             {
                 isMovingRight = true;
                 StartCoroutine(RightMove());
             }
 
-            if (Input.GetKeyDown(KeyCode.LeftArrow) && transform.position.x > -1f && !isMovingLeft)
+            if ((Input.GetKeyDown(KeyCode.LeftArrow) && transform.position.x > -1f && !isMovingLeft) ||
+                (Input.GetKeyDown(KeyCode.A) && transform.position.x > -1f && !isMovingLeft))
             {
                 isMovingLeft = true;
                 StartCoroutine(LeftMove());
@@ -90,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, rayRadius, layer) && !hurt.isInvulnerable)
         {
-            Debug.Log("colidiu");
+            playerManager.TakeDamage(40f);
             hurt.ActivateInvulnerability();
         }
     }

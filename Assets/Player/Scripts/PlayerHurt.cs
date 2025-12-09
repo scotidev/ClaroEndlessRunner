@@ -48,7 +48,7 @@ public class PlayerHurt : MonoBehaviour
 
         for (int i = 0; i < numberOfFlashes; i++)
         {
-            SetModelColor(new Color(0.5f, 0, 0, 0.5f));
+            SetModelColor(new Color(0.8f, 0, 0, 0.5f));
             yield return new WaitForSeconds(flashDuration);
 
             SetModelColor(originalColor);

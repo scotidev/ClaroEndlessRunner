@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -10,8 +9,13 @@ public class PlayerManager : MonoBehaviour
     public float maxEnergy = 100f;
     public Image energyBar;
 
+    private Animator animator;
+    private PlayerMovement playerMovement;
+
     void Start()
     {
+        animator = GetComponent<Animator>();
+        playerMovement = GetComponent<PlayerMovement>();
         UpdateEnergyBar();
     }
 
@@ -26,8 +30,16 @@ public class PlayerManager : MonoBehaviour
 
         if (playerEnergy <= 0)
         {
-            SceneManager.LoadScene("RestartCutscene");
+            playerEnergy = 0;
+            playerMovement.enabled = false;
+            animator.SetTrigger("fail");
+            Invoke("RestartGame", 2f);
         }
+    }
+
+    void RestartGame()
+    {
+        SceneManager.LoadScene("RestartCutscene");
     }
 
     void UpdateEnergyBar()
