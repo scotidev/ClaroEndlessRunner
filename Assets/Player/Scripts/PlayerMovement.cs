@@ -12,20 +12,27 @@ public class PlayerMovement : MonoBehaviour
     private bool isMovingLeft;
     private bool isMovingRight;
 
-    [Header("Raycast")]
-    public float rayRadius;
-    public LayerMask layer;
+    [Header("Slow Effect")]
+    public float slowDuration = 2f;
+    public float slowAmount = 5f;
+    private float originalSpeed;
 
+    //[Header("Raycast")]
+    //public float rayRadius;
+    public LayerMask layer;
     private CharacterController controller;
 
     private PlayerHurt hurt;
     private PlayerManager playerManager;
+    private Animator animator;
 
     void Start()
     {
         controller = GetComponent<CharacterController>();
         hurt = GetComponent<PlayerHurt>();
         playerManager = GetComponent<PlayerManager>();
+        animator = GetComponent<Animator>();
+        originalSpeed = speed;
     }
 
     void Update()
@@ -37,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 jumpVelocity = jumpHeight;
+                animator.SetTrigger("Jump");
             }
 
             if ((Input.GetKeyDown(KeyCode.RightArrow) && transform.position.x < 1f && !isMovingRight) ||
@@ -58,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
         {
             jumpVelocity -= gravity;
         }
-        OnCollision();
+        //OnCollision();
 
         direction.y = jumpVelocity;
 
@@ -87,14 +95,42 @@ public class PlayerMovement : MonoBehaviour
         isMovingLeft = false;
     }
 
-    void OnCollision()
-    {
-        RaycastHit hit;
+    //void OnCollision()
+    //{
+    //    RaycastHit hit;
 
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, rayRadius, layer) && !hurt.isInvulnerable)
+    //    if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, rayRadius, layer) && !hurt.isInvulnerable)
+    //    {
+    //        playerManager.TakeDamage(40f);
+    //        hurt.ActivateInvulnerability();
+    //        StartCoroutine(ApplySlowForDuration(slowDuration));
+    //    }
+    //}
+
+    // Novo método usando ControllerColliderHit
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        bool isObstacle = ((1 << hit.gameObject.layer) & layer) != 0;
+
+        if (isObstacle && !hurt.isInvulnerable)
         {
-            playerManager.TakeDamage(40f);
-            hurt.ActivateInvulnerability();
+            if (Vector3.Dot(Vector3.up, hit.normal) < 0.1f)
+            {
+                playerManager.TakeDamage(40f);
+                hurt.ActivateInvulnerability();
+                StartCoroutine(ApplySlowForDuration(slowDuration));
+            }
         }
+    }
+
+    private IEnumerator ApplySlowForDuration(float duration)
+    {
+        StopCoroutine(nameof(ApplySlowForDuration));
+
+        speed = originalSpeed - slowAmount;
+
+        yield return new WaitForSeconds(duration);
+
+        speed = originalSpeed;
     }
 }

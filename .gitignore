@@ -115,3 +115,7 @@ InitTestScene*.unity*
 /Assets/Plugins/3DTextGenerator/**/*.shadergraph
 /Assets/Plugins/3DTextGenerator/**/*.cginc
 /Assets/Plugins/3DTextGenerator/**/*.hlsl
+
+# Arquivos de Shaders do TextMesh Pro (Poluição na contagem de linguagens)
+/[Aa]ssets/TextMesh Pro/Resources/Shaders/
+/[Aa]ssets/TextMesh Pro/Shaders
