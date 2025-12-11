@@ -578,6 +578,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -927199367670048503, guid: e7d79d39b1fb8864192fa7be1b8ce0c9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5414621923003161229}
+    - targetCorrespondingSourceObject: {fileID: -927199367670048503, guid: e7d79d39b1fb8864192fa7be1b8ce0c9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5921282312097421130}
   m_SourcePrefab: {fileID: 100100000, guid: e7d79d39b1fb8864192fa7be1b8ce0c9, type: 3}
 --- !u!4 &6068699414471137749 stripped
 Transform:
@@ -648,12 +651,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddbc562dc5f901844b4534f864b14e06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  speed: 8
-  jumpHeight: 20
-  gravity: 0.3
+  speed: 30
+  jumpHeight: 15
+  gravity: 0.2
   horizontalSpeed: 6
-  rayRadius: 1.5
-  layer:
+  slowDuration: 1
+  slowAmount: 5
+  isStop: 0
+  collectiblesLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  obstaclesLayer:
     serializedVersion: 2
     m_Bits: 128
 --- !u!114 &5414621923003161229
@@ -672,3 +680,18 @@ MonoBehaviour:
   numberOfFlashes: 10
   targetLayers: 07000000
   isInvulnerable: 0
+--- !u!114 &5921282312097421130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7089510437048986566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 582a0965a6eecf540beb7234ec86b60f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerManager
+  playerEnergy: 100
+  maxEnergy: 100
+  energyBar: {fileID: 0}

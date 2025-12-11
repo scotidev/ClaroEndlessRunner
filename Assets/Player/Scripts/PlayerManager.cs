@@ -37,6 +37,12 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
+    public void Heal(float amount)
+    {
+        playerEnergy = Mathf.Min(playerEnergy + amount, maxEnergy);
+        UpdateEnergyBar();
+    }
+
     void RestartGame()
     {
         SceneManager.LoadScene("RestartCutscene");

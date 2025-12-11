@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 904854057185171067}
   - component: {fileID: 8017233802865613569}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TrafficCones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,7 +67,7 @@ GameObject:
   - component: {fileID: 1223424187867878942}
   - component: {fileID: 5687253143458766958}
   - component: {fileID: 8526473832585934515}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: layer 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 8363287983124329420}
   - component: {fileID: 8682940274006700564}
   - component: {fileID: 2936084506880707434}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: layer 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,7 +245,7 @@ GameObject:
   - component: {fileID: 7040071390420127021}
   - component: {fileID: 5013151594580737046}
   - component: {fileID: 2926557706564700785}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: layer 2_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

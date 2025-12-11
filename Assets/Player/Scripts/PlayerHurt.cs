@@ -6,6 +6,11 @@ public class PlayerHurt : MonoBehaviour
     [SerializeField] private float iFramesDuration = 2f;
     [SerializeField] private int numberOfFlashes = 5;
     [SerializeField] private int[] targetLayers;
+    [SerializeField] private Color damageFlashColor = new Color(0.8f, 0, 0, 0.5f);
+
+    [Header("Boost Settings")]
+    public float boostDuration = 4f;
+    public GameObject boostParticleEffect;
 
     private SkinnedMeshRenderer meshRenderer;
     private Color originalColor;
@@ -19,6 +24,11 @@ public class PlayerHurt : MonoBehaviour
         {
             originalColor = meshRenderer.material.color;
         }
+
+        if (boostParticleEffect != null)
+        {
+            boostParticleEffect.SetActive(false);
+        }
     }
 
     void Start()
@@ -29,7 +39,19 @@ public class PlayerHurt : MonoBehaviour
     public void ActivateInvulnerability()
     {
         if (isInvulnerable) return;
-        StartCoroutine(Invulnerability());
+        StartCoroutine(Invulnerability(iFramesDuration, damageFlashColor, false));
+    }
+
+    public void ActivateBoostInvulnerability()
+    {
+        if (isInvulnerable) return;
+
+        if (boostParticleEffect != null)
+        {
+            boostParticleEffect.SetActive(true);
+        }
+
+        StartCoroutine(Invulnerability(boostDuration, Color.clear, true));
     }
 
     private void IgnoreAllLayersCollision(bool isIgnored)
@@ -40,23 +62,47 @@ public class PlayerHurt : MonoBehaviour
         }
     }
 
-    private IEnumerator Invulnerability()
+    private IEnumerator Invulnerability(float duration, Color flashColor, bool isBoost)
     {
         isInvulnerable = true;
         IgnoreAllLayersCollision(true);
-        float flashDuration = iFramesDuration / (numberOfFlashes * 2);
 
-        for (int i = 0; i < numberOfFlashes; i++)
+        if (!isBoost)
         {
-            SetModelColor(new Color(0.8f, 0, 0, 0.5f));
-            yield return new WaitForSeconds(flashDuration);
+            float flashDuration = duration / (numberOfFlashes * 2);
 
-            SetModelColor(originalColor);
-            yield return new WaitForSeconds(flashDuration);
+            for (int i = 0; i < numberOfFlashes; i++)
+            {
+                SetModelColor(flashColor);
+                yield return new WaitForSeconds(flashDuration);
+
+                SetModelColor(originalColor);
+                yield return new WaitForSeconds(flashDuration);
+            }
+        }
+
+        SetModelColor(originalColor);
+
+        float remainingTime = duration;
+
+        if (!isBoost)
+        {
+            float timeSpentFlashing = (iFramesDuration / (numberOfFlashes * 2)) * numberOfFlashes * 2;
+            remainingTime = duration - timeSpentFlashing;
+        }
+
+        if (remainingTime > 0)
+        {
+            yield return new WaitForSeconds(remainingTime);
         }
 
         IgnoreAllLayersCollision(false);
         isInvulnerable = false;
+
+        if (isBoost && boostParticleEffect != null)
+        {
+            boostParticleEffect.SetActive(false);
+        }
     }
 
     private void SetModelColor(Color color)

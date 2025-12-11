@@ -19,7 +19,6 @@ public class SpawnObstacle : MonoBehaviour
     {
         if (map == null)
         {
-            Debug.LogError("O Collider 'map' não foi inicializado.ollider!");
             return;
         }
 
@@ -53,7 +52,6 @@ public class SpawnObstacle : MonoBehaviour
             counter++;
             if (counter > 50)
             {
-                Debug.Log("too many attemps");
                 return false;
             }
 

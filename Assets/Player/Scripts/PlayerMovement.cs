@@ -4,27 +4,33 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
-    public float speed;
     public float jumpHeight;
     private float jumpVelocity;
     public float gravity;
     public float horizontalSpeed;
     private bool isMovingLeft;
     private bool isMovingRight;
+    public float speed;
+    private float baseSpeed;
+    private float speedBeforeSlow;
 
     [Header("Slow Effect")]
     public float slowDuration = 2f;
-    public float slowAmount = 5f;
-    private float originalSpeed;
+    public float slowPercentage = 0.9f;
 
-    //[Header("Raycast")]
-    //public float rayRadius;
-    public LayerMask layer;
+    [Header("Collectibles")]
+    public bool isStop;
+    public LayerMask collectiblesLayer;
+
+    [Header("Obstacles")]
+    public LayerMask obstaclesLayer;
+
     private CharacterController controller;
-
     private PlayerHurt hurt;
     private PlayerManager playerManager;
     private Animator animator;
+    private GameManager gameManager;
+    private Coroutine slowCoroutine;
 
     void Start()
     {
@@ -32,7 +38,8 @@ public class PlayerMovement : MonoBehaviour
         hurt = GetComponent<PlayerHurt>();
         playerManager = GetComponent<PlayerManager>();
         animator = GetComponent<Animator>();
-        originalSpeed = speed;
+        gameManager = FindObjectOfType<GameManager>();
+        baseSpeed = speed;
     }
 
     void Update()
@@ -66,7 +73,6 @@ public class PlayerMovement : MonoBehaviour
         {
             jumpVelocity -= gravity;
         }
-        //OnCollision();
 
         direction.y = jumpVelocity;
 
@@ -95,42 +101,52 @@ public class PlayerMovement : MonoBehaviour
         isMovingLeft = false;
     }
 
-    //void OnCollision()
-    //{
-    //    RaycastHit hit;
+    public void IncreaseSpeed(float amount)
+    {
+        baseSpeed += amount;
 
-    //    if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, rayRadius, layer) && !hurt.isInvulnerable)
-    //    {
-    //        playerManager.TakeDamage(40f);
-    //        hurt.ActivateInvulnerability();
-    //        StartCoroutine(ApplySlowForDuration(slowDuration));
-    //    }
-    //}
+        if (slowCoroutine == null)
+        {
+            speed = baseSpeed;
+        }
+    }
 
-    // Novo método usando ControllerColliderHit
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        bool isObstacle = ((1 << hit.gameObject.layer) & layer) != 0;
+        bool isObstacle = ((1 << hit.gameObject.layer) & obstaclesLayer) != 0;
 
         if (isObstacle && !hurt.isInvulnerable)
         {
             if (Vector3.Dot(Vector3.up, hit.normal) < 0.1f)
             {
-                playerManager.TakeDamage(40f);
+                playerManager.TakeDamage(20f);
                 hurt.ActivateInvulnerability();
-                StartCoroutine(ApplySlowForDuration(slowDuration));
+                ApplySlow();
             }
         }
     }
 
+    private void ApplySlow()
+    {
+        if (slowCoroutine != null)
+        {
+            StopCoroutine(slowCoroutine);
+        }
+        speedBeforeSlow = baseSpeed;
+
+        slowCoroutine = StartCoroutine(ApplySlowForDuration(slowDuration));
+    }
+
     private IEnumerator ApplySlowForDuration(float duration)
     {
-        StopCoroutine(nameof(ApplySlowForDuration));
+        speed = speedBeforeSlow * (1 - slowPercentage);
 
-        speed = originalSpeed - slowAmount;
+        speed = Mathf.Max(speed, 1f);
 
         yield return new WaitForSeconds(duration);
 
-        speed = originalSpeed;
+        speed = baseSpeed;
+
+        slowCoroutine = null;
     }
 }

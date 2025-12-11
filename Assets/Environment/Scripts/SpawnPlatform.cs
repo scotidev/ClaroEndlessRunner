@@ -12,6 +12,10 @@ public class SpawnPlatform : MonoBehaviour
     public List<GameObject> obstacleSections = new List<GameObject>();
     public List<Transform> currentObstacleSections = new List<Transform>();
 
+    [Header("Collectibles")]
+    public List<GameObject> collectibleSections = new List<GameObject>();
+    public List<Transform> currentCollectibleSections = new List<Transform>();
+
     public int offset;
     private Transform player;
     private Transform currentPlatformPoint;
@@ -31,6 +35,10 @@ public class SpawnPlatform : MonoBehaviour
             Transform o = Instantiate(obstacleSections[randomObstacleIndex], new Vector3(0, 0, i * 30), transform.rotation).transform;
             currentObstacleSections.Add(o);
 
+            int randomCollectibleIndex = Random.Range(0, collectibleSections.Count);
+            Transform c = Instantiate(collectibleSections[randomCollectibleIndex], new Vector3(0, 0, i * 30), transform.rotation).transform;
+            currentCollectibleSections.Add(c);
+
             offset += 30;
         }
 
@@ -43,7 +51,12 @@ public class SpawnPlatform : MonoBehaviour
 
         if (distance >= 5)
         {
-            Recycle(currentPlatforms[platformIndex].gameObject, currentObstacleSections[platformIndex].gameObject);
+            Recycle(
+                currentPlatforms[platformIndex].gameObject,
+                currentObstacleSections[platformIndex].gameObject,
+                currentCollectibleSections[platformIndex].gameObject
+             );
+
             platformIndex++;
 
             if (platformIndex > currentPlatforms.Count - 1)
@@ -55,19 +68,24 @@ public class SpawnPlatform : MonoBehaviour
         }
     }
 
-    public void Recycle(GameObject platform, GameObject obstacleSection)
+    public void Recycle(GameObject platform, GameObject obstacleSection, GameObject collectibleSection)
     {
         platform.transform.position = new Vector3(0, 0, offset);
-        obstacleSection.transform.position = new Vector3(0, 0, offset);
+
         offset += 30;
 
         Destroy(obstacleSection);
-
         int randomObstacleIndex = Random.Range(0, obstacleSections.Count);
         GameObject newObstaclePrefab = obstacleSections[randomObstacleIndex];
-
         Transform newObstacle = Instantiate(newObstaclePrefab, new Vector3(0, 0, offset - 30), transform.rotation).transform;
-
         currentObstacleSections[platformIndex] = newObstacle;
+
+        Destroy(collectibleSection);
+
+        int randomCollectibleIndex = Random.Range(0, collectibleSections.Count);
+        GameObject newCollectiblePrefab = collectibleSections[randomCollectibleIndex];
+
+        Transform newCollectible = Instantiate(newCollectiblePrefab, new Vector3(0, 0, offset - 30), transform.rotation).transform;
+        currentCollectibleSections[platformIndex] = newCollectible;
     }
 }
