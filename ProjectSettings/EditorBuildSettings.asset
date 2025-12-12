@@ -15,8 +15,8 @@ EditorBuildSettings:
     path: Assets/Scenes/MainScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/RestartCutscene.unity
-    guid: 616cf2ff14ae01b48a70f2d3bba5d11c
+    path: Assets/Scenes/SegundaChanceDesktop.unity
+    guid: 9cf348eff15bdac4da794685ed2f0523
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: d77105ba0bd4e2f4cbbd99bf5a8fd1ca

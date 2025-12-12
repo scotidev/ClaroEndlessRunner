@@ -18,6 +18,9 @@ public class PlayerMovement : MonoBehaviour
     public float slowDuration = 2f;
     public float slowPercentage = 0.9f;
 
+    [Header("Extra Life Visual")]
+    public GameObject extraLifeEffect;
+
     [Header("Collectibles")]
     public bool isStop;
     public LayerMask collectiblesLayer;
@@ -40,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         gameManager = FindObjectOfType<GameManager>();
         baseSpeed = speed;
+        SetExtraLifeEffectState(GameManager.canRestartFromCheckpoint);
     }
 
     void Update()
@@ -123,6 +127,14 @@ public class PlayerMovement : MonoBehaviour
                 hurt.ActivateInvulnerability();
                 ApplySlow();
             }
+        }
+    }
+
+    public void SetExtraLifeEffectState(bool active)
+    {
+        if (extraLifeEffect != null)
+        {
+            extraLifeEffect.SetActive(active);
         }
     }
 

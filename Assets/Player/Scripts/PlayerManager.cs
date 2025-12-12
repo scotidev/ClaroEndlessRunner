@@ -16,6 +16,12 @@ public class PlayerManager : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         playerMovement = GetComponent<PlayerMovement>();
+
+        if (GameManager.canRestartFromCheckpoint)
+        {
+            playerEnergy = maxEnergy - 80f;
+        }
+
         UpdateEnergyBar();
     }
 
@@ -33,7 +39,15 @@ public class PlayerManager : MonoBehaviour
             playerEnergy = 0;
             playerMovement.enabled = false;
             animator.SetTrigger("fail");
-            Invoke("RestartGame", 2f);
+
+            if (GameManager.canRestartFromCheckpoint)
+            {
+                Invoke("RestartGame", 2f);
+            }
+            else
+            {
+                Invoke("GameOverScene", 2f);
+            }
         }
     }
 
@@ -45,7 +59,12 @@ public class PlayerManager : MonoBehaviour
 
     void RestartGame()
     {
-        SceneManager.LoadScene("RestartCutscene");
+        SceneManager.LoadScene("SegundaChanceDesktop");
+    }
+
+    void GameOverScene()
+    {
+        SceneManager.LoadScene("GameOver");
     }
 
     void UpdateEnergyBar()

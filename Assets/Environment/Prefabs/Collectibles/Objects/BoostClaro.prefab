@@ -110,6 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 772d82bd051cc1643abc39e1f2bfc1d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClaroBoost
+  healAmount: 20
 --- !u!65 &762253445412464874
 BoxCollider:
   m_ObjectHideFlags: 0

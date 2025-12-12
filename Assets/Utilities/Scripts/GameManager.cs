@@ -4,6 +4,16 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    [Header("Checkpoint System")]
+    public static bool canRestartFromCheckpoint = false;
+    public static int savedCoinScore = 0;
+    public static float savedDistanceScore = 0f;
+    public static int nextCoinTarget = 2;
+
+    [Header("Checkpoint Settings")]
+    [SerializeField] private int coinIntervalForCheckpoint = 50;
+    private int currentCoinTarget;
+
     [Header("Pause")]
     [SerializeField] private GameObject painelPause;
     private bool jogoPausado = false;
@@ -27,6 +37,14 @@ public class GameManager : MonoBehaviour
         player = GameObject.FindWithTag("Player").GetComponent<PlayerMovement>();
 
         nextSpeedIncreaseScore = distanceInterval;
+        currentCoinTarget = nextCoinTarget;
+
+        CheckForRestartData();
+
+        if (canRestartFromCheckpoint)
+        {
+            player.SetExtraLifeEffectState(true);
+        }
     }
 
     void Update()
@@ -41,7 +59,7 @@ public class GameManager : MonoBehaviour
 
         if (!player.isStop)
         {
-            score += Time.deltaTime * 10f;
+            score += Time.deltaTime * player.speed;
             scoreText.text = Mathf.Round(score).ToString();
 
             CheckForSpeedIncrease();
@@ -55,8 +73,41 @@ public class GameManager : MonoBehaviour
             player.IncreaseSpeed(speedIncreasePerDistance);
 
             nextSpeedIncreaseScore += distanceInterval;
+        }
+    }
 
-            Debug.Log($"Velocidade aumentada! Nova Velocidade Base: {player.speed}");
+    private void CheckpointLogic()
+    {
+        if (scoreCoin >= currentCoinTarget)
+        {
+            canRestartFromCheckpoint = true;
+
+            player.SetExtraLifeEffectState(true);
+
+            savedCoinScore = scoreCoin;
+            savedDistanceScore = score;
+
+            currentCoinTarget += coinIntervalForCheckpoint;
+            nextCoinTarget = currentCoinTarget;
+
+            Debug.Log($"Checkpoint salvo! Próximo alvo: {nextCoinTarget} moedas.");
+        }
+    }
+
+    private void CheckForRestartData()
+    {
+        if (canRestartFromCheckpoint == true)
+        {
+            score = savedDistanceScore;
+            scoreCoin = savedCoinScore;
+            scoreText.text = Mathf.Round(score).ToString();
+            scoreCoinText.text = scoreCoin.ToString();
+
+            currentCoinTarget = nextCoinTarget;
+
+            player.SetExtraLifeEffectState(false);
+
+            canRestartFromCheckpoint = false;
         }
     }
 
@@ -64,6 +115,7 @@ public class GameManager : MonoBehaviour
     {
         scoreCoin++;
         scoreCoinText.text = scoreCoin.ToString();
+        CheckpointLogic();
     }
 
     public void PausarJogo()

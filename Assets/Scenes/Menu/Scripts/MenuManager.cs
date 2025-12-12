@@ -10,7 +10,7 @@ public class MenuManager : MonoBehaviour
     public void Jogar()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("Cutscene");
     }
 
     public void AbrirOpcoes()
