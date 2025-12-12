@@ -8,9 +8,4 @@ public class GameOverController : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene("Menu");
     }
-
-    public void SairDoJogo()
-    {
-        Application.Quit();
-    }
 }

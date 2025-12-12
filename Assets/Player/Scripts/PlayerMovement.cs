@@ -7,16 +7,21 @@ public class PlayerMovement : MonoBehaviour
     public float jumpHeight;
     private float jumpVelocity;
     public float gravity;
-    public float horizontalSpeed;
-    private bool isMovingLeft;
-    private bool isMovingRight;
     public float speed;
     private float baseSpeed;
-    private float speedBeforeSlow;
+
+    [Header("Lane Movement")]
+    // AQUI ESTA A MUDANÇA: Aumentei de 1 para 3.5. 
+    // Se ainda achar pouco, mude o 3.5f para 4f ou 5f.
+    private float[] lanes = new float[] { -3.5f, 0f, 3.5f };
+    private int currentLane = 1;
+    public float laneSmooth = 10f;
 
     [Header("Slow Effect")]
     public float slowDuration = 2f;
-    public float slowPercentage = 0.9f;
+    public float slowPercentage = 0.75f;
+    private float speedBeforeSlow;
+    private Coroutine slowCoroutine;
 
     [Header("Extra Life Visual")]
     public GameObject extraLifeEffect;
@@ -33,7 +38,6 @@ public class PlayerMovement : MonoBehaviour
     private PlayerManager playerManager;
     private Animator animator;
     private GameManager gameManager;
-    private Coroutine slowCoroutine;
 
     void Start()
     {
@@ -42,79 +46,74 @@ public class PlayerMovement : MonoBehaviour
         playerManager = GetComponent<PlayerManager>();
         animator = GetComponent<Animator>();
         gameManager = FindObjectOfType<GameManager>();
+
         baseSpeed = speed;
         SetExtraLifeEffectState(GameManager.canRestartFromCheckpoint);
     }
 
     void Update()
     {
-        Vector3 direction = Vector3.forward * speed;
+        // 1. INPUTS DE MOVIMENTO LATERAL
+        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+        {
+            if (currentLane < 2)
+                currentLane++;
+        }
 
+        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+        {
+            if (currentLane > 0)
+                currentLane--;
+        }
+
+        // 2. CÁLCULO DE PULO E GRAVIDADE
         if (controller.isGrounded)
         {
+            // Resetamos a gravidade
+            if (jumpVelocity < 0)
+                jumpVelocity = -2f;
+
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 jumpVelocity = jumpHeight;
                 animator.SetTrigger("Jump");
             }
-
-            if ((Input.GetKeyDown(KeyCode.RightArrow) && transform.position.x < 1f && !isMovingRight) ||
-                (Input.GetKeyDown(KeyCode.D) && transform.position.x < 1f && !isMovingRight))
-            {
-                isMovingRight = true;
-                StartCoroutine(RightMove());
-            }
-
-            if ((Input.GetKeyDown(KeyCode.LeftArrow) && transform.position.x > -1f && !isMovingLeft) ||
-                (Input.GetKeyDown(KeyCode.A) && transform.position.x > -1f && !isMovingLeft))
-            {
-                isMovingLeft = true;
-                StartCoroutine(LeftMove());
-            }
         }
-
         else
         {
-            jumpVelocity -= gravity;
+            // Aplica a gravidade se estiver no ar
+            jumpVelocity -= gravity * Time.deltaTime;
         }
 
-        direction.y = jumpVelocity;
+        // 3. CÁLCULO FINAL DOS VETORES DE MOVIMENTO
 
-        controller.Move(direction * Time.deltaTime);
+        // EIXO Z (Frente)
+        float moveZ = speed;
+
+        // EIXO Y (Pulo/Gravidade)
+        float moveY = jumpVelocity;
+
+        // EIXO X (Lateral)
+        float targetX = lanes[currentLane];
+        // O laneSmooth define a velocidade da troca de faixa
+        float moveX = (targetX - transform.position.x) * laneSmooth;
+
+        // 4. APLICAÇÃO NO CONTROLE
+        Vector3 finalVelocity = new Vector3(moveX, moveY, moveZ);
+
+        controller.Move(finalVelocity * Time.deltaTime);
     }
 
-    IEnumerator RightMove()
-    {
-        for (float i = 0; i < 10; i += 0.1f)
-        {
-            controller.Move(Vector3.right * horizontalSpeed * Time.deltaTime);
-            yield return null;
-        }
-
-        isMovingRight = false;
-    }
-
-    IEnumerator LeftMove()
-    {
-        for (float i = 0; i < 10; i += 0.1f)
-        {
-            controller.Move(Vector3.left * horizontalSpeed * Time.deltaTime);
-            yield return null;
-        }
-
-        isMovingLeft = false;
-    }
-
+    // ---------- SPEED BOOST ----------
     public void IncreaseSpeed(float amount)
     {
         baseSpeed += amount;
 
         if (slowCoroutine == null)
-        {
             speed = baseSpeed;
-        }
     }
 
+    // ---------- OBSTACLE COLLISION ----------
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
         bool isObstacle = ((1 << hit.gameObject.layer) & obstaclesLayer) != 0;
@@ -133,32 +132,26 @@ public class PlayerMovement : MonoBehaviour
     public void SetExtraLifeEffectState(bool active)
     {
         if (extraLifeEffect != null)
-        {
             extraLifeEffect.SetActive(active);
-        }
     }
 
+    // ----------- SLOW EFFECT -----------
     private void ApplySlow()
     {
         if (slowCoroutine != null)
-        {
             StopCoroutine(slowCoroutine);
-        }
-        speedBeforeSlow = baseSpeed;
 
+        speedBeforeSlow = baseSpeed;
         slowCoroutine = StartCoroutine(ApplySlowForDuration(slowDuration));
     }
 
     private IEnumerator ApplySlowForDuration(float duration)
     {
-        speed = speedBeforeSlow * (1 - slowPercentage);
-
-        speed = Mathf.Max(speed, 1f);
+        speed = baseSpeed * slowPercentage;
 
         yield return new WaitForSeconds(duration);
 
-        speed = baseSpeed;
-
+        speed = speedBeforeSlow;
         slowCoroutine = null;
     }
 }

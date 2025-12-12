@@ -27,16 +27,34 @@ public class SpawnPlatform : MonoBehaviour
 
         for (int i = 0; i < platforms.Count; i++)
         {
+            // 1. Cria a Plataforma na posição padrão (0, 30, 60...)
             Transform p = Instantiate(platforms[i], new Vector3(0, 0, i * 30), transform.rotation).transform;
             currentPlatforms.Add(p);
 
+            // 2. Lógica do Obstáculo
             int randomObstacleIndex = Random.Range(0, obstacleSections.Count);
 
-            Transform o = Instantiate(obstacleSections[randomObstacleIndex], new Vector3(0, 0, i * 30), transform.rotation).transform;
+            // Define a posição Z do obstáculo
+            float obstacleZPosition = i * 30;
+
+            // SE for o primeiro obstáculo (i == 0), empurra ele 10 metros para frente
+            if (i == 0)
+            {
+                obstacleZPosition = 10f;
+            }
+
+            Transform o = Instantiate(obstacleSections[randomObstacleIndex], new Vector3(0, 0, obstacleZPosition), transform.rotation).transform;
             currentObstacleSections.Add(o);
 
+
+            // 3. Lógica do Colecionável (Moedas)
             int randomCollectibleIndex = Random.Range(0, collectibleSections.Count);
-            Transform c = Instantiate(collectibleSections[randomCollectibleIndex], new Vector3(0, 0, i * 30), transform.rotation).transform;
+
+            // Sugestão: Também empurrar a moeda para 10m se for a primeira, para não nascer dentro do player
+            float collectibleZPosition = i * 30;
+            if (i == 0) collectibleZPosition = 10f;
+
+            Transform c = Instantiate(collectibleSections[randomCollectibleIndex], new Vector3(0, 0, collectibleZPosition), transform.rotation).transform;
             currentCollectibleSections.Add(c);
 
             offset += 30;
@@ -64,7 +82,7 @@ public class SpawnPlatform : MonoBehaviour
                 platformIndex = 0;
             }
 
-            currentPlatformPoint = currentPlatformPoint = currentPlatforms[platformIndex].GetComponent<Platform>().point;
+            currentPlatformPoint = currentPlatforms[platformIndex].GetComponent<Platform>().point;
         }
     }
 
@@ -77,6 +95,8 @@ public class SpawnPlatform : MonoBehaviour
         Destroy(obstacleSection);
         int randomObstacleIndex = Random.Range(0, obstacleSections.Count);
         GameObject newObstaclePrefab = obstacleSections[randomObstacleIndex];
+
+        // Na reciclagem, volta ao padrão normal (offset - 30), pois o offset já está lá longe
         Transform newObstacle = Instantiate(newObstaclePrefab, new Vector3(0, 0, offset - 30), transform.rotation).transform;
         currentObstacleSections[platformIndex] = newObstacle;
 
@@ -89,3 +109,8 @@ public class SpawnPlatform : MonoBehaviour
         currentCollectibleSections[platformIndex] = newCollectible;
     }
 }
+
+
+/* 
+
+ */

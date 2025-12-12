@@ -5,18 +5,21 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     [Header("Checkpoint System")]
-    public static bool canRestartFromCheckpoint = false;
+    public static int nextCoinTarget = 5;
     public static int savedCoinScore = 0;
     public static float savedDistanceScore = 0f;
-    public static int nextCoinTarget = 2;
+    public static bool canRestartFromCheckpoint = false;
 
     [Header("Checkpoint Settings")]
-    [SerializeField] private int coinIntervalForCheckpoint = 50;
+    [SerializeField] private int coinIntervalForCheckpoint = 5;
     private int currentCoinTarget;
 
     [Header("Pause")]
     [SerializeField] private GameObject painelPause;
     private bool jogoPausado = false;
+
+    [Header("Tutorial")]
+    [SerializeField] private GameObject painelTutorial;
 
     [Header("Score")]
     public float score;
@@ -45,10 +48,27 @@ public class GameManager : MonoBehaviour
         {
             player.SetExtraLifeEffectState(true);
         }
+
+        if (!GameManager.canRestartFromCheckpoint)
+        {
+            PausarParaTutorial();
+        }
+        else
+        {
+            CheckForRestartData();
+        }
     }
 
     void Update()
     {
+        if (painelTutorial.activeSelf)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                RetomarJogo();
+            }
+        }
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (jogoPausado)
@@ -118,6 +138,17 @@ public class GameManager : MonoBehaviour
         CheckpointLogic();
     }
 
+    public void PausarParaTutorial()
+    {
+        Time.timeScale = 0f;
+
+        if (painelPause != null) painelPause.SetActive(false);
+
+        if (painelTutorial != null) painelTutorial.SetActive(true);
+
+        jogoPausado = true;
+    }
+
     public void PausarJogo()
     {
         Time.timeScale = 0f;
@@ -129,6 +160,7 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         painelPause.SetActive(false);
+        painelTutorial.SetActive(false);
         jogoPausado = false;
     }
 
