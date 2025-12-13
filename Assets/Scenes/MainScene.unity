@@ -984,18 +984,23 @@ MonoBehaviour:
   - {fileID: 729705157317528469, guid: a4b4232563f2c4f4dbd43ad621f0ffce, type: 3}
   - {fileID: 2437381540126230239, guid: 21d075a3d250efe4d87b9f493a30eee3, type: 3}
   - {fileID: 9078811076572386530, guid: 145a1f0f01c20b94eb63e9b1b14a8db1, type: 3}
+  - {fileID: 729705157317528469, guid: a4b4232563f2c4f4dbd43ad621f0ffce, type: 3}
+  - {fileID: 2437381540126230239, guid: 21d075a3d250efe4d87b9f493a30eee3, type: 3}
+  - {fileID: 9078811076572386530, guid: 145a1f0f01c20b94eb63e9b1b14a8db1, type: 3}
   currentPlatforms: []
   obstacleSections:
-  - {fileID: 8297735166814773967, guid: d15ab6fa383954148b2a95aa07087f91, type: 3}
+  - {fileID: 3706413516683612069, guid: 2448fedc8b4ca0441b4ff996773a3cc8, type: 3}
   - {fileID: 840356912103863214, guid: 292f9e99f81ca7241a1f186fce7b6406, type: 3}
   - {fileID: 5314064665936188814, guid: 3558014a32d4317409e8dd81d8905e88, type: 3}
   - {fileID: 9196699835055121771, guid: 2ae717ca3b2aa70499d626dad2cbf33d, type: 3}
   - {fileID: 8835122289424463972, guid: 73d3e27887067f947873bd5bb1883fba, type: 3}
   - {fileID: 3152344417488299314, guid: 2bc1dacd2b3ebcf4abb8d4ed23776585, type: 3}
+  - {fileID: 8297735166814773967, guid: d15ab6fa383954148b2a95aa07087f91, type: 3}
   currentObstacleSections: []
   collectibleSections:
   - {fileID: 2686427966400853113, guid: f3630c1ce73c5bd4bb5b33e2043f68a4, type: 3}
   currentCollectibleSections: []
+  safePlatformCount: 1
   offset: 0
 --- !u!1001 &1870580250
 PrefabInstance:
@@ -1331,7 +1336,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3880932835812052464, guid: d0f241e4ffb48b94cb3148cbb9a09e6f, type: 3}
       propertyPath: slowPercentage
-      value: 0.9
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 3880932835812052464, guid: d0f241e4ffb48b94cb3148cbb9a09e6f, type: 3}
       propertyPath: extraLifeEffect

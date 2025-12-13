@@ -340,7 +340,8 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 427871989138162960, guid: d0f241e4ffb48b94cb3148cbb9a09e6f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0f241e4ffb48b94cb3148cbb9a09e6f, type: 3}
@@ -1605,8 +1606,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1523125876}
   - component: {fileID: 1523125875}
-  - component: {fileID: 1523125874}
   - component: {fileID: 1523125877}
+  - component: {fileID: 1523125878}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1614,14 +1615,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1523125874
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1523125873}
-  m_Enabled: 1
 --- !u!20 &1523125875
 Camera:
   m_ObjectHideFlags: 0
@@ -1732,6 +1725,14 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!81 &1523125878
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523125873}
+  m_Enabled: 1
 --- !u!1 &1597235189
 GameObject:
   m_ObjectHideFlags: 0
@@ -1907,7 +1908,7 @@ MonoBehaviour:
   textoBotaoSim: {fileID: 0}
   textoBotaoNao: {fileID: 0}
   nomeCenaJogo: MainScene
-  nomeCenaMenu: MenuPrincipal
+  nomeCenaMenu: Menu
 --- !u!1001 &1804299578
 PrefabInstance:
   m_ObjectHideFlags: 0

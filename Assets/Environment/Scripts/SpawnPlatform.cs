@@ -16,6 +16,9 @@ public class SpawnPlatform : MonoBehaviour
     public List<GameObject> collectibleSections = new List<GameObject>();
     public List<Transform> currentCollectibleSections = new List<Transform>();
 
+    [Header("Safety Configuration")]
+    public int safePlatformCount = 2;
+
     public int offset;
     private Transform player;
     private Transform currentPlatformPoint;
@@ -25,41 +28,43 @@ public class SpawnPlatform : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
+        offset = 0;
+
         for (int i = 0; i < platforms.Count; i++)
         {
-            // 1. Cria a Plataforma na posição padrão (0, 30, 60...)
-            Transform p = Instantiate(platforms[i], new Vector3(0, 0, i * 30), transform.rotation).transform;
+            Transform p = Instantiate(platforms[i], new Vector3(0, 0, offset), transform.rotation).transform;
             currentPlatforms.Add(p);
 
-            // 2. Lógica do Obstáculo
-            int randomObstacleIndex = Random.Range(0, obstacleSections.Count);
+            Transform o;
 
-            // Define a posição Z do obstáculo
-            float obstacleZPosition = i * 30;
-
-            // SE for o primeiro obstáculo (i == 0), empurra ele 10 metros para frente
-            if (i == 0)
+            if (i < safePlatformCount)
             {
-                obstacleZPosition = 10f;
+                if (obstacleSections.Count > 0)
+                {
+                    o = Instantiate(obstacleSections[0], new Vector3(0, 0, offset), transform.rotation).transform;
+                }
+                else
+                {
+                    o = new GameObject("SafeSpawn Fallback").transform;
+                    o.position = new Vector3(0, 0, offset);
+                }
+            }
+            else
+            {
+                int randomObstacleIndex = Random.Range(1, obstacleSections.Count);
+                o = Instantiate(obstacleSections[randomObstacleIndex], new Vector3(0, 0, offset), transform.rotation).transform;
             }
 
-            Transform o = Instantiate(obstacleSections[randomObstacleIndex], new Vector3(0, 0, obstacleZPosition), transform.rotation).transform;
             currentObstacleSections.Add(o);
 
-
-            // 3. Lógica do Colecionável (Moedas)
             int randomCollectibleIndex = Random.Range(0, collectibleSections.Count);
-
-            // Sugestão: Também empurrar a moeda para 10m se for a primeira, para não nascer dentro do player
-            float collectibleZPosition = i * 30;
-            if (i == 0) collectibleZPosition = 10f;
-
-            Transform c = Instantiate(collectibleSections[randomCollectibleIndex], new Vector3(0, 0, collectibleZPosition), transform.rotation).transform;
+            Transform c = Instantiate(collectibleSections[randomCollectibleIndex], new Vector3(0, 0, offset), transform.rotation).transform;
             currentCollectibleSections.Add(c);
 
             offset += 30;
         }
 
+        platformIndex = 0;
         currentPlatformPoint = currentPlatforms[platformIndex].GetComponent<Platform>().point;
     }
 
@@ -89,16 +94,24 @@ public class SpawnPlatform : MonoBehaviour
     public void Recycle(GameObject platform, GameObject obstacleSection, GameObject collectibleSection)
     {
         platform.transform.position = new Vector3(0, 0, offset);
-
         offset += 30;
 
         Destroy(obstacleSection);
-        int randomObstacleIndex = Random.Range(0, obstacleSections.Count);
-        GameObject newObstaclePrefab = obstacleSections[randomObstacleIndex];
 
-        // Na reciclagem, volta ao padrão normal (offset - 30), pois o offset já está lá longe
-        Transform newObstacle = Instantiate(newObstaclePrefab, new Vector3(0, 0, offset - 30), transform.rotation).transform;
-        currentObstacleSections[platformIndex] = newObstacle;
+        if (obstacleSections.Count > 1)
+        {
+            int randomObstacleIndex = Random.Range(1, obstacleSections.Count);
+            GameObject newObstaclePrefab = obstacleSections[randomObstacleIndex];
+
+            Transform newObstacle = Instantiate(newObstaclePrefab, new Vector3(0, 0, offset - 30), transform.rotation).transform;
+            currentObstacleSections[platformIndex] = newObstacle;
+        }
+        else
+        {
+            Transform newObstacle = Instantiate(obstacleSections[0], new Vector3(0, 0, offset - 30), transform.rotation).transform;
+            currentObstacleSections[platformIndex] = newObstacle;
+        }
+
 
         Destroy(collectibleSection);
 

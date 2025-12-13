@@ -4,12 +4,10 @@ using UnityEngine.UI;
 
 public class GameOverDialogo : MonoBehaviour
 {
-    [Header("---- UI Components ----")]
+    [Header("UI Components")]
     public Text textoPrincipal;
-    public Text textoBotaoSim;
-    public Text textoBotaoNao;
 
-    [Header("---- Configuração de Cenas ----")]
+    [Header("Configuração de Cenas")]
     public string nomeCenaJogo = "MainScene";
     public string nomeCenaMenu = "MenuPrincipal";
 
@@ -37,9 +35,6 @@ public class GameOverDialogo : MonoBehaviour
         estadoConfirmacaoMenu = false;
 
         textoPrincipal.text = "Sabemos que a jornada é difícil, mas você vai conseguir.\nGostaria de tentar mais uma vez?";
-
-        textoBotaoSim.text = "SIM (S)";
-        textoBotaoNao.text = "NÃO (N)";
     }
 
     void MostrarSegundaPergunta()
@@ -47,9 +42,6 @@ public class GameOverDialogo : MonoBehaviour
         estadoConfirmacaoMenu = true;
 
         textoPrincipal.text = "Você deseja mesmo ir para o menu?\nSua pontuação não aumentará com essa decisão.";
-
-        textoBotaoSim.text = "SIM (S)";
-        textoBotaoNao.text = "NÃO (N)";
     }
 
     public void AcaoSim()
