@@ -27,8 +27,13 @@ public class AudioManager : MonoBehaviour
         if (musicSource.clip != clip)
         {
             musicSource.clip = clip;
-            musicSource.loop = true;
-            musicSource.volume = globalMusicVolume;
+        }
+
+        musicSource.loop = true;
+        musicSource.volume = globalMusicVolume;
+
+        if (!musicSource.isPlaying)
+        {
             musicSource.Play();
         }
     }

@@ -9,7 +9,6 @@ public class SceneMusicLoader : MonoBehaviour
         if (AudioManager.Instance != null)
         {
             AudioManager.Instance.StopMusic();
-
             if (sceneMusic != null)
             {
                 AudioManager.Instance.PlayMusic(sceneMusic);
