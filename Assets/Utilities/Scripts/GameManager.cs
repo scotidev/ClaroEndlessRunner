@@ -5,13 +5,13 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     [Header("Checkpoint System")]
-    public static int nextCoinTarget = 5;
+    public static int nextCoinTarget = 50;
     public static int savedCoinScore = 0;
     public static float savedDistanceScore = 0f;
     public static bool canRestartFromCheckpoint = false;
 
     [Header("Checkpoint Settings")]
-    [SerializeField] private int coinIntervalForCheckpoint = 5;
+    [SerializeField] private int coinIntervalForCheckpoint = 50;
     private int currentCoinTarget;
 
     [Header("Pause")]

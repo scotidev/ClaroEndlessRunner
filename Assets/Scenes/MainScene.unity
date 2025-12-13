@@ -494,7 +494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24d2ea695faa68e4f8a7f0f17792aad4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  coinIntervalForCheckpoint: 5
+  coinIntervalForCheckpoint: 50
   painelPause: {fileID: 2028174673}
   painelTutorial: {fileID: 1402929792}
   score: 0
@@ -999,6 +999,15 @@ MonoBehaviour:
   currentObstacleSections: []
   collectibleSections:
   - {fileID: 2686427966400853113, guid: f3630c1ce73c5bd4bb5b33e2043f68a4, type: 3}
+  - {fileID: 636555804236457404, guid: 2981fb3dade2f7648ac849e4d79c7c05, type: 3}
+  - {fileID: 3074294003568942124, guid: b7adf90550bd4f7428fc76388b5a6ec7, type: 3}
+  - {fileID: 7296318752087917001, guid: 52e4bf5919eb9954a886a6c8c47d7d44, type: 3}
+  - {fileID: 7213207642768092067, guid: 146d427422477934aa15ecf4d803b30b, type: 3}
+  - {fileID: 8404787331199322848, guid: de54e8772d32099419fc848f69b9dbf7, type: 3}
+  - {fileID: 1033331029989444965, guid: 3d17b93c5dc469a45b830c20a8906962, type: 3}
+  - {fileID: 6232198230873214548, guid: 5920d293ca62de04292e2e12c970e2c6, type: 3}
+  - {fileID: 6030236791756076752, guid: 64d8a8b1c1351a74fa6071c3c72e96b8, type: 3}
+  - {fileID: 9042366612975578654, guid: 4cbf6188e6336e444bbb5bc79dcf8df0, type: 3}
   currentCollectibleSections: []
   safePlatformCount: 1
   offset: 0
