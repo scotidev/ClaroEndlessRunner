@@ -53,10 +53,6 @@ public class GameManager : MonoBehaviour
         {
             PausarParaTutorial();
         }
-        else
-        {
-            CheckForRestartData();
-        }
     }
 
     void Update()
@@ -77,7 +73,7 @@ public class GameManager : MonoBehaviour
                 PausarJogo();
         }
 
-        if (!player.isStop)
+        if (player != null && !player.isStop)
         {
             score += Time.deltaTime * player.speed;
             scoreText.text = Mathf.Round(score).ToString();
@@ -91,7 +87,6 @@ public class GameManager : MonoBehaviour
         if (score >= nextSpeedIncreaseScore)
         {
             player.IncreaseSpeed(speedIncreasePerDistance);
-
             nextSpeedIncreaseScore += distanceInterval;
         }
     }
@@ -101,17 +96,20 @@ public class GameManager : MonoBehaviour
         if (scoreCoin >= currentCoinTarget)
         {
             canRestartFromCheckpoint = true;
-
             player.SetExtraLifeEffectState(true);
-
             savedCoinScore = scoreCoin;
             savedDistanceScore = score;
-
             currentCoinTarget += coinIntervalForCheckpoint;
             nextCoinTarget = currentCoinTarget;
-
-            Debug.Log($"Checkpoint salvo! Próximo alvo: {nextCoinTarget} moedas.");
         }
+    }
+
+    public static void ResetGameStatics()
+    {
+        nextCoinTarget = 50;
+        savedCoinScore = 0;
+        savedDistanceScore = 0f;
+        canRestartFromCheckpoint = false;
     }
 
     private void CheckForRestartData()
@@ -125,9 +123,12 @@ public class GameManager : MonoBehaviour
 
             currentCoinTarget = nextCoinTarget;
 
-            player.SetExtraLifeEffectState(false);
+            ResetGameStatics();
 
-            canRestartFromCheckpoint = false;
+            if (player != null)
+            {
+                player.SetExtraLifeEffectState(false);
+            }
         }
     }
 
@@ -141,11 +142,8 @@ public class GameManager : MonoBehaviour
     public void PausarParaTutorial()
     {
         Time.timeScale = 0f;
-
         if (painelPause != null) painelPause.SetActive(false);
-
         if (painelTutorial != null) painelTutorial.SetActive(true);
-
         jogoPausado = true;
     }
 
@@ -167,6 +165,7 @@ public class GameManager : MonoBehaviour
     public void IrParaMenu()
     {
         Time.timeScale = 1f;
+        GameManager.ResetGameStatics();
         SceneManager.LoadScene("Menu");
     }
 

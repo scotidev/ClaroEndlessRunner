@@ -1905,8 +1905,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameOverManager
   textoPrincipal: {fileID: 601951959}
-  textoBotaoSim: {fileID: 0}
-  textoBotaoNao: {fileID: 0}
   nomeCenaJogo: MainScene
   nomeCenaMenu: Menu
 --- !u!1001 &1804299578

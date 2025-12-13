@@ -33,14 +33,12 @@ public class GameOverDialogo : MonoBehaviour
     void MostrarPrimeiraPergunta()
     {
         estadoConfirmacaoMenu = false;
-
         textoPrincipal.text = "Sabemos que a jornada é difícil, mas você vai conseguir.\nGostaria de tentar mais uma vez?";
     }
 
     void MostrarSegundaPergunta()
     {
         estadoConfirmacaoMenu = true;
-
         textoPrincipal.text = "Você deseja mesmo ir para o menu?\nSua pontuação não aumentará com essa decisão.";
     }
 
@@ -52,6 +50,10 @@ public class GameOverDialogo : MonoBehaviour
         }
         else
         {
+            if (GameManager.canRestartFromCheckpoint)
+            {
+                GameManager.ResetGameStatics();
+            }
             SceneManager.LoadScene(nomeCenaMenu);
         }
     }
