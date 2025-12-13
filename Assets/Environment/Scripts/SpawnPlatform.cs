@@ -109,8 +109,3 @@ public class SpawnPlatform : MonoBehaviour
         currentCollectibleSections[platformIndex] = newCollectible;
     }
 }
-
-
-/* 
-
- */
