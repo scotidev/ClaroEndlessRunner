@@ -81,6 +81,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 67316d0c47eeb374db7e21aeb6c62548, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7986053621844805960}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 67316d0c47eeb374db7e21aeb6c62548, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 359346888594804073}
   m_SourcePrefab: {fileID: 100100000, guid: 67316d0c47eeb374db7e21aeb6c62548, type: 3}
 --- !u!1 &2656690055094565514 stripped
 GameObject:
@@ -120,6 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b02e63688a78f4bb2feca395c1e6c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Collectible
+  collectSFX: {fileID: 8300000, guid: 2403705a9ab57364c8068347aa28638e, type: 3}
 --- !u!114 &7986053621844805960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,3 +139,30 @@ MonoBehaviour:
   rotationSpeed: 90
   floatAmplitude: 0.2
   floatSpeed: 1
+--- !u!54 &359346888594804073
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2656690055094565514}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

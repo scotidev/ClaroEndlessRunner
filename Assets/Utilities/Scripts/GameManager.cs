@@ -18,6 +18,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject painelPause;
     private bool jogoPausado = false;
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip extraLifeSFX;
+
     [Header("Tutorial")]
     [SerializeField] private GameObject painelTutorial;
 
@@ -101,6 +104,11 @@ public class GameManager : MonoBehaviour
             savedDistanceScore = score;
             currentCoinTarget += coinIntervalForCheckpoint;
             nextCoinTarget = currentCoinTarget;
+
+            if (AudioManager.Instance != null && extraLifeSFX != null)
+            {
+                AudioManager.Instance.PlaySFX(extraLifeSFX, 1.3f);
+            }
         }
     }
 

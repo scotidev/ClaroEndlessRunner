@@ -30,6 +30,10 @@ public class PlayerMovement : MonoBehaviour
     [Header("Obstacles")]
     public LayerMask obstaclesLayer;
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip damageSFX;
+    [SerializeField] private AudioClip jumpSFX;
+
     private CharacterController controller;
     private PlayerHurt hurt;
     private PlayerManager playerManager;
@@ -83,6 +87,11 @@ public class PlayerMovement : MonoBehaviour
             {
                 jumpVelocity = jumpHeight;
                 animator.SetTrigger("Jump");
+
+                if (AudioManager.Instance != null && jumpSFX != null)
+                {
+                    AudioManager.Instance.PlaySFX(jumpSFX, 1.0f);
+                }
             }
         }
         else
@@ -121,6 +130,10 @@ public class PlayerMovement : MonoBehaviour
                 playerManager.TakeDamage(20f);
                 hurt.ActivateInvulnerability();
                 ApplySlow();
+                if (AudioManager.Instance != null && damageSFX != null)
+                {
+                    AudioManager.Instance.PlaySFX(damageSFX, 0.8f);
+                }
             }
         }
     }

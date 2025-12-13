@@ -5,6 +5,9 @@ public class ClaroBoost : MonoBehaviour
     [Header("Boost Effect")]
     public float healAmount = 20f;
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip boostSFX;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -17,6 +20,11 @@ public class ClaroBoost : MonoBehaviour
                 playerHurt.ActivateBoostInvulnerability();
 
                 playerManager.Heal(healAmount);
+
+                if (AudioManager.Instance != null && boostSFX != null)
+                {
+                    AudioManager.Instance.PlaySFX(boostSFX, 1f);
+                }
             }
 
             Destroy(gameObject);

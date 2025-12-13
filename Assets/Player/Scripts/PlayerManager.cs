@@ -9,6 +9,9 @@ public class PlayerManager : MonoBehaviour
     public float maxEnergy = 100f;
     public Image energyBar;
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip failSFX;
+
     private Animator animator;
     private PlayerMovement playerMovement;
 
@@ -36,6 +39,10 @@ public class PlayerManager : MonoBehaviour
 
         if (playerEnergy <= 0)
         {
+            if (AudioManager.Instance != null && failSFX != null)
+            {
+                AudioManager.Instance.PlaySFX(failSFX, 1.0f);
+            }
             playerEnergy = 0;
             playerMovement.enabled = false;
             animator.SetTrigger("fail");
