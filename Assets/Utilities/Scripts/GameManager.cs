@@ -14,21 +14,19 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int coinIntervalForCheckpoint = 50;
     private int currentCoinTarget;
 
-    [Header("Pause")]
-    [SerializeField] private GameObject painelPause;
+    [Header("UI Panes (Filled Dynamically)")]
+    private GameObject painelPause;
+    private GameObject painelTutorial;
     private bool jogoPausado = false;
 
     [Header("Audio")]
     [SerializeField] private AudioClip extraLifeSFX;
 
-    [Header("Tutorial")]
-    [SerializeField] private GameObject painelTutorial;
-
     [Header("Score")]
     public float score;
     public int scoreCoin;
-    public Text scoreText;
-    public Text scoreCoinText;
+    private Text scoreText;
+    private Text scoreCoinText;
 
     [Header("Game Speed Settings")]
     [SerializeField] private float speedIncreasePerDistance = 2f;
@@ -39,15 +37,25 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        if (Time.timeScale == 0f) RetomarJogo();
-        player = GameObject.FindWithTag("Player").GetComponent<PlayerMovement>();
+        SetupDynamicUIReferences();
+
+        if (Time.timeScale == 0f)
+        {
+            RetomarJogo();
+        }
+
+        GameObject playerObj = GameObject.FindWithTag("Player");
+        if (playerObj != null)
+        {
+            player = playerObj.GetComponent<PlayerMovement>();
+        }
 
         nextSpeedIncreaseScore = distanceInterval;
         currentCoinTarget = nextCoinTarget;
 
         CheckForRestartData();
 
-        if (canRestartFromCheckpoint)
+        if (canRestartFromCheckpoint && player != null)
         {
             player.SetExtraLifeEffectState(true);
         }
@@ -56,11 +64,78 @@ public class GameManager : MonoBehaviour
         {
             PausarParaTutorial();
         }
+
+        UpdateScoreDisplays();
+    }
+
+    private void SetupDynamicUIReferences()
+    {
+        GameObject canvasRoot = GameObject.FindObjectOfType<Canvas>()?.gameObject;
+        if (canvasRoot == null) return;
+
+        Transform activeUIParent = null;
+
+        foreach (Transform child in canvasRoot.transform)
+        {
+            if (child.gameObject.activeInHierarchy && (child.name == "Desktop" || child.name == "Mobile"))
+            {
+                activeUIParent = child;
+                break;
+            }
+        }
+
+        if (activeUIParent == null)
+        {
+            return;
+        }
+
+        Transform[] uiChildren = activeUIParent.GetComponentsInChildren<Transform>(true);
+
+        foreach (Transform child in uiChildren)
+        {
+            if (child.name.Contains("HUD"))
+            {
+                if (child.gameObject.activeInHierarchy)
+                {
+                    if (scoreText == null) scoreText = FindTextComponentByName(child, "ScoreText");
+                    if (scoreCoinText == null) scoreCoinText = FindTextComponentByName(child, "CoinText");
+                }
+            }
+            else if (child.name.Contains("Pause") && painelPause == null)
+            {
+                if (child.parent == activeUIParent)
+                {
+                    painelPause = child.gameObject;
+                }
+            }
+            else if (child.name.Contains("Tutorial") && painelTutorial == null)
+            {
+                if (child.parent == activeUIParent)
+                {
+                    painelTutorial = child.gameObject;
+                }
+            }
+
+            if (scoreText != null && scoreCoinText != null && painelPause != null && painelTutorial != null) break;
+        }
+    }
+
+    private Text FindTextComponentByName(Transform parent, string name)
+    {
+        foreach (Transform t in parent.GetComponentsInChildren<Transform>(true))
+        {
+            if (t.name.Contains(name) && t.gameObject.activeInHierarchy)
+            {
+                Text txt = t.GetComponent<Text>();
+                if (txt != null) return txt;
+            }
+        }
+        return null;
     }
 
     void Update()
     {
-        if (painelTutorial.activeSelf)
+        if (painelTutorial != null && painelTutorial.activeSelf)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -79,9 +154,20 @@ public class GameManager : MonoBehaviour
         if (player != null && !player.isStop)
         {
             score += Time.deltaTime * player.speed;
-            scoreText.text = Mathf.Round(score).ToString();
-
+            UpdateScoreDisplays();
             CheckForSpeedIncrease();
+        }
+    }
+
+    private void UpdateScoreDisplays()
+    {
+        if (scoreText != null)
+        {
+            scoreText.text = Mathf.Round(score).ToString();
+        }
+        if (scoreCoinText != null)
+        {
+            scoreCoinText.text = scoreCoin.ToString();
         }
     }
 
@@ -89,7 +175,10 @@ public class GameManager : MonoBehaviour
     {
         if (score >= nextSpeedIncreaseScore)
         {
-            player.IncreaseSpeed(speedIncreasePerDistance);
+            if (player != null)
+            {
+                player.IncreaseSpeed(speedIncreasePerDistance);
+            }
             nextSpeedIncreaseScore += distanceInterval;
         }
     }
@@ -99,7 +188,7 @@ public class GameManager : MonoBehaviour
         if (scoreCoin >= currentCoinTarget)
         {
             canRestartFromCheckpoint = true;
-            player.SetExtraLifeEffectState(true);
+            if (player != null) player.SetExtraLifeEffectState(true);
             savedCoinScore = scoreCoin;
             savedDistanceScore = score;
             currentCoinTarget += coinIntervalForCheckpoint;
@@ -126,8 +215,6 @@ public class GameManager : MonoBehaviour
         {
             score = savedDistanceScore;
             scoreCoin = savedCoinScore;
-            scoreText.text = Mathf.Round(score).ToString();
-            scoreCoinText.text = scoreCoin.ToString();
 
             currentCoinTarget = nextCoinTarget;
 
@@ -143,7 +230,7 @@ public class GameManager : MonoBehaviour
     public void AddCoin()
     {
         scoreCoin++;
-        scoreCoinText.text = scoreCoin.ToString();
+        UpdateScoreDisplays();
         CheckpointLogic();
     }
 
@@ -151,22 +238,27 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 0f;
         if (painelPause != null) painelPause.SetActive(false);
-        if (painelTutorial != null) painelTutorial.SetActive(true);
+
+        if (painelTutorial != null)
+        {
+            painelTutorial.SetActive(true);
+        }
+
         jogoPausado = true;
     }
 
     public void PausarJogo()
     {
         Time.timeScale = 0f;
-        painelPause.SetActive(true);
+        if (painelPause != null) painelPause.SetActive(true);
         jogoPausado = true;
     }
 
     public void RetomarJogo()
     {
         Time.timeScale = 1f;
-        painelPause.SetActive(false);
-        painelTutorial.SetActive(false);
+        if (painelPause != null) painelPause.SetActive(false);
+        if (painelTutorial != null) painelTutorial.SetActive(false);
         jogoPausado = false;
     }
 

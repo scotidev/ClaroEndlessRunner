@@ -24,6 +24,11 @@ public class AudioManager : MonoBehaviour
 
     public void PlayMusic(AudioClip clip)
     {
+        if (musicSource == null)
+        {
+            return;
+        }
+
         if (musicSource.clip != clip)
         {
             musicSource.clip = clip;
@@ -40,11 +45,24 @@ public class AudioManager : MonoBehaviour
 
     public void StopMusic()
     {
-        musicSource.Stop();
+        if (musicSource != null)
+        {
+            musicSource.Stop();
+        }
     }
 
     public void PlaySFX(AudioClip clip, float volume = 1f)
     {
+        if (sfxSource == null)
+        {
+            return;
+        }
+
+        if (clip == null)
+        {
+            return;
+        }
+
         float finalVolume = globalSfxVolume * volume;
         sfxSource.PlayOneShot(clip, finalVolume);
     }

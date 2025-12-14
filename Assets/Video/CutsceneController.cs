@@ -6,7 +6,7 @@ using UnityEngine.Video;
 public class CutsceneController : MonoBehaviour
 {
     public string nextSceneName = "MainScene";
-    private const string VIDEO_FILE_NAME = "DesktopCutscene.mp4";
+    private const string VIDEO_FILE_NAME = "MobileCutscene.mp4";
     private VideoPlayer videoPlayer;
 
     void Start()
@@ -49,8 +49,25 @@ public class CutsceneController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene(nextSceneName);
+            SkipCutscene();
         }
+
+        if (Application.isMobilePlatform || Application.platform == RuntimePlatform.WebGLPlayer)
+        {
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+            {
+                SkipCutscene();
+            }
+        }
+    }
+
+    private void SkipCutscene()
+    {
+        if (videoPlayer != null && videoPlayer.isPlaying)
+        {
+            videoPlayer.Stop();
+        }
+        SceneManager.LoadScene(nextSceneName);
     }
 
     void OnVideoFinished(VideoPlayer vp)

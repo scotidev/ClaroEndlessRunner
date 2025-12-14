@@ -6,6 +6,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject painelMenuInicial;
     [SerializeField] private GameObject painelSettings;
     [SerializeField] private GameObject painelCreditos;
+    [SerializeField] private GameObject painelProximoCreditos;
 
     public void Jogar()
     {
@@ -35,6 +36,18 @@ public class MenuManager : MonoBehaviour
     {
         painelMenuInicial.SetActive(true);
         painelCreditos.SetActive(false);
+    }
+
+    public void ProximoCreditos()
+    {
+        painelProximoCreditos.SetActive(true);
+        painelCreditos.SetActive(false);
+    }
+
+    public void VoltarCreditos()
+    {
+        painelProximoCreditos.SetActive(false);
+        painelCreditos.SetActive(true);
     }
 
     public void SairJogo()

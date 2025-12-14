@@ -80,7 +80,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5232698379036957604}
   - component: {fileID: 6827797695204224505}
-  - component: {fileID: 774731389384208052}
   m_Layer: 0
   m_Name: Area1Pivot
   m_TagString: Untagged
@@ -133,30 +132,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Platform
   point: {fileID: 6712206664539028323}
---- !u!114 &774731389384208052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 729705157317528469}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 648a9fcfa74f50b4ebe3d5cd11c60b42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpawnObstacle
-  spawnList:
-  - {fileID: 4311010213305465634, guid: 84062c9556b3cef4f8aa9a210cba155b, type: 3}
-  - {fileID: 6251666189375065463, guid: d4f40363aa44ea649ac792f348b8c36a, type: 3}
-  - {fileID: 2051354519210185303, guid: bd54396f614833c4aac609531580219e, type: 3}
-  - {fileID: 158352753535455414, guid: 66498b191d3c64e4ea56d4ed50eabbbd, type: 3}
-  - {fileID: 7970140317087810869, guid: e2802ce6b21f34344bc910cf30e9b3a8, type: 3}
-  minSpawn: 3
-  maxSpawn: 5
-  blockLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  map: {fileID: 3910162780548263283}
 --- !u!1 &922834175088671329
 GameObject:
   m_ObjectHideFlags: 0
@@ -7649,11 +7624,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c584636d16ec8b247938fbc846bd9c0d, type: 3}
---- !u!64 &3910162780548263283 stripped
-MeshCollider:
-  m_CorrespondingSourceObject: {fileID: -535548338416559626, guid: c584636d16ec8b247938fbc846bd9c0d, type: 3}
-  m_PrefabInstance: {fileID: 5679859139567236229}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4453640000037007380 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8294619171686450321, guid: c584636d16ec8b247938fbc846bd9c0d, type: 3}

@@ -7,7 +7,7 @@ public class PlayerManager : MonoBehaviour
     [Header("Energy")]
     public float playerEnergy = 100f;
     public float maxEnergy = 100f;
-    public Image energyBar;
+    private Image energyBar;
 
     [Header("Audio")]
     [SerializeField] private AudioClip failSFX;
@@ -20,12 +20,28 @@ public class PlayerManager : MonoBehaviour
         animator = GetComponent<Animator>();
         playerMovement = GetComponent<PlayerMovement>();
 
+        SetupEnergyBarReference();
+
         if (GameManager.canRestartFromCheckpoint)
         {
             playerEnergy = maxEnergy - 80f;
         }
 
         UpdateEnergyBar();
+    }
+
+    private void SetupEnergyBarReference()
+    {
+        Image[] images = FindObjectsOfType<Image>(true);
+
+        foreach (Image img in images)
+        {
+            if (img.name.Contains("EnergyBarFill") && img.gameObject.activeInHierarchy)
+            {
+                energyBar = img;
+                return;
+            }
+        }
     }
 
     void Update()
@@ -43,9 +59,10 @@ public class PlayerManager : MonoBehaviour
             {
                 AudioManager.Instance.PlaySFX(failSFX, 1.0f);
             }
+
             playerEnergy = 0;
-            playerMovement.enabled = false;
-            animator.SetTrigger("fail");
+            if (playerMovement != null) playerMovement.enabled = false;
+            if (animator != null) animator.SetTrigger("fail");
 
             if (GameManager.canRestartFromCheckpoint)
             {
@@ -56,6 +73,8 @@ public class PlayerManager : MonoBehaviour
                 Invoke("GameOverScene", 2f);
             }
         }
+
+        UpdateEnergyBar();
     }
 
     public void Heal(float amount)
@@ -66,7 +85,7 @@ public class PlayerManager : MonoBehaviour
 
     void RestartGame()
     {
-        SceneManager.LoadScene("SegundaChanceDesktop");
+        SceneManager.LoadScene("RestartGame");
     }
 
     void GameOverScene()

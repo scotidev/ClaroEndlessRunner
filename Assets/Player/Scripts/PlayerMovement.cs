@@ -34,6 +34,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private AudioClip damageSFX;
     [SerializeField] private AudioClip jumpSFX;
 
+    [Header("Mobile Input")]
+    [SerializeField] private float swipeThreshold = 1f;
+    private Vector2 touchStartPos;
+    private bool touchMoving;
+
     private CharacterController controller;
     private PlayerHurt hurt;
     private PlayerManager playerManager;
@@ -66,37 +71,18 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+        HandleKeyboardInput();
+
+        HandleMobileInput();
+
+        if (!controller.isGrounded)
         {
-            if (currentLane < 2)
-                currentLane++;
-        }
-
-        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
-        {
-            if (currentLane > 0)
-                currentLane--;
-        }
-
-        if (controller.isGrounded)
-        {
-            if (jumpVelocity < 0)
-                jumpVelocity = -1f;
-
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                jumpVelocity = jumpHeight;
-                animator.SetTrigger("Jump");
-
-                if (AudioManager.Instance != null && jumpSFX != null)
-                {
-                    AudioManager.Instance.PlaySFX(jumpSFX, 1.0f);
-                }
-            }
+            jumpVelocity -= gravity * Time.deltaTime;
         }
         else
         {
-            jumpVelocity -= gravity * Time.deltaTime;
+            if (jumpVelocity < 0)
+                jumpVelocity = -1f;
         }
 
         float moveZ = speed;
@@ -107,6 +93,86 @@ public class PlayerMovement : MonoBehaviour
         Vector3 finalVelocity = new Vector3(moveX, moveY, moveZ);
 
         controller.Move(finalVelocity * Time.deltaTime);
+    }
+
+    private void HandleKeyboardInput()
+    {
+        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+        {
+            MoveToLane(1);
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+        {
+            MoveToLane(-1);
+        }
+
+        if (controller.isGrounded && Input.GetKeyDown(KeyCode.Space))
+        {
+            Jump();
+        }
+    }
+
+    private void HandleMobileInput()
+    {
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+
+            if (touch.phase == TouchPhase.Began)
+            {
+                touchStartPos = touch.position;
+                touchMoving = true;
+            }
+            else if (touch.phase == TouchPhase.Ended && touchMoving)
+            {
+                Vector2 touchEndPos = touch.position;
+                Vector2 swipeDelta = touchEndPos - touchStartPos;
+
+                if (swipeDelta.magnitude > swipeThreshold)
+                {
+                    if (Mathf.Abs(swipeDelta.x) > Mathf.Abs(swipeDelta.y))
+                    {
+                        if (swipeDelta.x > 0)
+                        {
+                            MoveToLane(1);
+                        }
+                        else
+                        {
+                            MoveToLane(-1);
+                        }
+                    }
+                    else
+                    {
+                        if (swipeDelta.y > 0)
+                        {
+                            if (controller.isGrounded)
+                            {
+                                Jump();
+                            }
+                        }
+                    }
+                }
+
+                touchMoving = false;
+            }
+        }
+    }
+
+    private void MoveToLane(int direction)
+    {
+        currentLane = Mathf.Clamp(currentLane + direction, 0, 2);
+    }
+
+    private void Jump()
+    {
+        jumpVelocity = jumpHeight;
+        animator.SetTrigger("Jump");
+
+        if (AudioManager.Instance != null && jumpSFX != null)
+        {
+            AudioManager.Instance.PlaySFX(jumpSFX, 1.0f);
+        }
     }
 
     public void IncreaseSpeed(float amount)
