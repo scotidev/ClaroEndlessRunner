@@ -68,6 +68,34 @@ public class GameManager : MonoBehaviour
         UpdateScoreDisplays();
     }
 
+    void Update()
+    {
+        if (painelTutorial != null && painelTutorial.activeSelf)
+        {
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
+            {
+                Debug.Log("LOG U2: Input de Retomar detectado (Espaço/Clique/Toque). Chamando RetomarJogo.");
+                RetomarJogo();
+                return;
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (jogoPausado && painelTutorial == null)
+                RetomarJogo();
+            else if (!jogoPausado && painelTutorial == null)
+                PausarJogo();
+        }
+
+        if (player != null && !player.isStop)
+        {
+            score += Time.deltaTime * player.speed;
+            UpdateScoreDisplays();
+            CheckForSpeedIncrease();
+        }
+    }
+
     private void SetupDynamicUIReferences()
     {
         GameObject canvasRoot = GameObject.FindObjectOfType<Canvas>()?.gameObject;
@@ -131,32 +159,6 @@ public class GameManager : MonoBehaviour
             }
         }
         return null;
-    }
-
-    void Update()
-    {
-        if (painelTutorial != null && painelTutorial.activeSelf)
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                RetomarJogo();
-            }
-        }
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (jogoPausado)
-                RetomarJogo();
-            else
-                PausarJogo();
-        }
-
-        if (player != null && !player.isStop)
-        {
-            score += Time.deltaTime * player.speed;
-            UpdateScoreDisplays();
-            CheckForSpeedIncrease();
-        }
     }
 
     private void UpdateScoreDisplays()
