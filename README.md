@@ -45,7 +45,7 @@ Este projeto foi desenvolvido como Trabalho Final do curso **Desenvolvimento de 
 ### Opção 1: Jogar no Navegador (WebGL)
 O jogo está disponível para ser jogado diretamente no navegador (PC ou Mobile) através do GitHub Pages (ou itch.io).
 
-👉 **[CLIQUE AQUI PARA JOGAR AGORA]([https://scotidev.itch.io/](https://scotidev.itch.io/conexaofavela))** 👈
+👉 **[CLIQUE AQUI PARA JOGAR AGORA](https://scotidev.itch.io/](https://scotidev.itch.io/conexaofavela))** 👈
 
 ### Opção 2: Executável (Windows)
 1. Vá até a aba [Releases]([LINK_PARA_A_ABA_RELEASES_DO_SEU_GITHUB]) deste repositório.
