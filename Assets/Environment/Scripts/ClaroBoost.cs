@@ -23,7 +23,7 @@ public class ClaroBoost : MonoBehaviour
 
                 if (AudioManager.Instance != null && boostSFX != null)
                 {
-                    AudioManager.Instance.PlaySFX(boostSFX, 1f);
+                    AudioManager.Instance.PlaySFX(boostSFX, .7f);
                 }
             }
 

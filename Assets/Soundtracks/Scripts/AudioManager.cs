@@ -7,7 +7,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource musicSource;
     [SerializeField] private AudioSource sfxSource;
     [SerializeField] private float globalMusicVolume = 1f;
-    private float globalSfxVolume = 1f;
+    private float globalSfxVolume = .7f;
 
     void Awake()
     {

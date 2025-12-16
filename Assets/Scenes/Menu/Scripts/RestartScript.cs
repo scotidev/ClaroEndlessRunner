@@ -4,18 +4,32 @@ using UnityEngine.UI;
 
 public class GameOverDialogo : MonoBehaviour
 {
-    [Header("UI Components")]
-    public Text textoPrincipal;
+    private Text textoPrincipal;
 
     [Header("Configuração de Cenas")]
     public string nomeCenaJogo = "MainScene";
     public string nomeCenaMenu = "MenuPrincipal";
 
+    private const string TEXT_TAG = "DialogContentText";
+
     private bool estadoConfirmacaoMenu = false;
+
+    void Awake()
+    {
+        GameObject contentObject = GameObject.FindWithTag(TEXT_TAG);
+
+        if (contentObject != null)
+        {
+            textoPrincipal = contentObject.GetComponent<Text>();
+        }
+    }
 
     void Start()
     {
-        MostrarPrimeiraPergunta();
+        if (textoPrincipal != null)
+        {
+            MostrarPrimeiraPergunta();
+        }
     }
 
     void Update()

@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 10f;
     private float baseSpeed;
     private float speedBeforeSlow;
+    public float maxSpeed = 50f;
 
     [Header("Lane Movement")]
     private float[] lanes = new float[] { -2.5f, 0f, 2.5f };
@@ -171,13 +172,15 @@ public class PlayerMovement : MonoBehaviour
 
         if (AudioManager.Instance != null && jumpSFX != null)
         {
-            AudioManager.Instance.PlaySFX(jumpSFX, 1.0f);
+            AudioManager.Instance.PlaySFX(jumpSFX, 0.6f);
         }
     }
 
     public void IncreaseSpeed(float amount)
     {
         baseSpeed += amount;
+
+        baseSpeed = Mathf.Min(baseSpeed, maxSpeed);
 
         if (slowCoroutine == null)
         {
@@ -198,7 +201,7 @@ public class PlayerMovement : MonoBehaviour
                 ApplySlow();
                 if (AudioManager.Instance != null && damageSFX != null)
                 {
-                    AudioManager.Instance.PlaySFX(damageSFX, 0.8f);
+                    AudioManager.Instance.PlaySFX(damageSFX, 0.6f);
                 }
             }
         }

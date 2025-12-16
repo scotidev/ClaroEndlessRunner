@@ -5,13 +5,13 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     [Header("Checkpoint System")]
-    public static int nextCoinTarget = 50;
+    public static int nextCoinTarget = 30;
     public static int savedCoinScore = 0;
     public static float savedDistanceScore = 0f;
     public static bool canRestartFromCheckpoint = false;
 
     [Header("Checkpoint Settings")]
-    [SerializeField] private int coinIntervalForCheckpoint = 50;
+    [SerializeField] private int coinIntervalForCheckpoint = 30;
     private int currentCoinTarget;
 
     [Header("UI Panes (Filled Dynamically)")]
@@ -74,7 +74,6 @@ public class GameManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
             {
-                Debug.Log("LOG U2: Input de Retomar detectado (Espaço/Clique/Toque). Chamando RetomarJogo.");
                 RetomarJogo();
                 return;
             }
@@ -82,10 +81,21 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (jogoPausado && painelTutorial == null)
+            bool tutorialAtivo = (painelTutorial != null && painelTutorial.activeSelf);
+
+
+            if (tutorialAtivo)
+            {
+                return;
+            }
+            else if (jogoPausado)
+            {
                 RetomarJogo();
-            else if (!jogoPausado && painelTutorial == null)
+            }
+            else
+            {
                 PausarJogo();
+            }
         }
 
         if (player != null && !player.isStop)
