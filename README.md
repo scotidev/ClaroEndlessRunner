@@ -93,12 +93,12 @@ Este projeto não seria possível sem o apoio e a temática trazida pelos nossos
 Este jogo foi criado pelo **Grupo 1 - GAM3**:
 
 
-* **Davi Pessoa** - Artista 3D & UI/UX - [Link]
-* **Denilson Silva** - Level Designer, Programador & Sonoplastia - [Link]
-* **Gabriel Scoti** - Programador Líder, Game Designer & UI/UX - [Link do LinkedIn ou GitHub]
-* **Jonathan Carneiro** - Programador & Analista de Requisitos - [Github](https://github.com/Jhon87)
-* **Laryssa Menjon** - [Função] - [Link]
-* **Richard Roque** - [Função] - [Link]
+* **Davi Pessoa** - Artista 3D, Sonoplastia & UI/UX - [Email](davipessoao789@gmail.com).
+* **Denilson Silva** - Level Designer, Programador, UI/UX & Sonoplastia - [LinkedIn](https://www.linkedin.com/in/denilson-silva-580b3780/).
+* **Gabriel Scoti** - Programador Líder, Game Designer & UI/UX - [LinkedIn](https://www.linkedin.com/in/scotidev/).
+* **Jonathan Carneiro** - Programador, QA Tester & Analista de Requisitos - [LinkedIn](www.linkedin.com/in/jonathan-rocha-4a726b73)
+* **Laryssa Menjon** - Game Designer, programador, Sonoplastia & UI/UX - [LinkedIn](https://www.linkedin.com/in/laryssa-aguiar-menjon-33b590b5/). 
+* **Richard Roque** - Programador, Game Designer & QA Tester - [LinkedIn](https://www.linkedin.com/in/richard-roque-silva).
 
 ---
 
