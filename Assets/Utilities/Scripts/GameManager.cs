@@ -208,7 +208,7 @@ public class GameManager : MonoBehaviour
 
             if (AudioManager.Instance != null && extraLifeSFX != null)
             {
-                AudioManager.Instance.PlaySFX(extraLifeSFX, 1.3f);
+                AudioManager.Instance.PlaySFX(extraLifeSFX, .3f);
             }
         }
     }

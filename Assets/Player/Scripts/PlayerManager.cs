@@ -57,7 +57,7 @@ public class PlayerManager : MonoBehaviour
         {
             if (AudioManager.Instance != null && failSFX != null)
             {
-                AudioManager.Instance.PlaySFX(failSFX, .6f);
+                AudioManager.Instance.PlaySFX(failSFX, .2f);
             }
 
             playerEnergy = 0;

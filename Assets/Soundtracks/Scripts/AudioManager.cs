@@ -6,8 +6,10 @@ public class AudioManager : MonoBehaviour
 
     [SerializeField] private AudioSource musicSource;
     [SerializeField] private AudioSource sfxSource;
-    [SerializeField] private float globalMusicVolume = 1f;
-    private float globalSfxVolume = .7f;
+
+    [Header("Volumes Globais")]
+    [SerializeField] private float globalMusicVolume = 0.05f;
+    [SerializeField] private float globalSfxVolume = 0.2f;
 
     void Awake()
     {
@@ -15,6 +17,16 @@ public class AudioManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+
+            if (musicSource != null)
+            {
+                musicSource.volume = 1f;
+            }
+            if (sfxSource != null)
+            {
+                sfxSource.volume = 1f;
+            }
+
         }
         else
         {
@@ -35,6 +47,7 @@ public class AudioManager : MonoBehaviour
         }
 
         musicSource.loop = true;
+
         musicSource.volume = globalMusicVolume;
 
         if (!musicSource.isPlaying)
@@ -53,17 +66,13 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySFX(AudioClip clip, float volume = 1f)
     {
-        if (sfxSource == null)
-        {
-            return;
-        }
-
-        if (clip == null)
+        if (sfxSource == null || clip == null)
         {
             return;
         }
 
         float finalVolume = globalSfxVolume * volume;
+
         sfxSource.PlayOneShot(clip, finalVolume);
     }
 }

@@ -172,7 +172,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (AudioManager.Instance != null && jumpSFX != null)
         {
-            AudioManager.Instance.PlaySFX(jumpSFX, 0.6f);
+            AudioManager.Instance.PlaySFX(jumpSFX, 0.2f);
         }
     }
 
@@ -201,7 +201,7 @@ public class PlayerMovement : MonoBehaviour
                 ApplySlow();
                 if (AudioManager.Instance != null && damageSFX != null)
                 {
-                    AudioManager.Instance.PlaySFX(damageSFX, 0.6f);
+                    AudioManager.Instance.PlaySFX(damageSFX, 0.2f);
                 }
             }
         }

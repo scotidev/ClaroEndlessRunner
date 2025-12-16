@@ -22,7 +22,7 @@ public class UIAudioController : MonoBehaviour, IPointerEnterHandler
     {
         if (AudioManager.Instance != null && Instance != null && Instance.clickSFX != null)
         {
-            AudioManager.Instance.PlaySFX(Instance.clickSFX, 0.8f);
+            AudioManager.Instance.PlaySFX(Instance.clickSFX, 0.2f);
         }
     }
 
@@ -33,7 +33,7 @@ public class UIAudioController : MonoBehaviour, IPointerEnterHandler
 
         if (AudioManager.Instance != null && Instance != null && Instance.hoverSFX != null)
         {
-            AudioManager.Instance.PlaySFX(Instance.hoverSFX, 0.6f);
+            AudioManager.Instance.PlaySFX(Instance.hoverSFX, 0.2f);
         }
     }
 }

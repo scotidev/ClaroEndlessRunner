@@ -3346,9 +3346,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2865502037274356556, guid: 6f8e094bdbac15e41903acca0f2fa166, type: 3}
+      propertyPath: globalMusicVolume
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4652979152410775755, guid: 6f8e094bdbac15e41903acca0f2fa166, type: 3}
+      propertyPath: m_Volume
+      value: 0.591
+      objectReference: {fileID: 0}
     - target: {fileID: 6913865350879747726, guid: 6f8e094bdbac15e41903acca0f2fa166, type: 3}
       propertyPath: m_Name
       value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7887926777343286610, guid: 6f8e094bdbac15e41903acca0f2fa166, type: 3}
+      propertyPath: m_Volume
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5245,7 +5257,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1837425838}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: FecharCreditos
+        m_MethodName: VoltarCreditos
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
