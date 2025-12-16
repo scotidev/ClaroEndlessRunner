@@ -6023,7 +6023,7 @@ MonoBehaviour:
   painelMenuInicial: {fileID: 1837425837}
   painelSettings: {fileID: 1692525357}
   painelCreditos: {fileID: 1994602669}
-  painelProximoCreditos: {fileID: 0}
+  painelProximoCreditos: {fileID: 889217924}
 --- !u!224 &1837425839
 RectTransform:
   m_ObjectHideFlags: 0
